@@ -37,7 +37,7 @@ export async function ContactMe(
 		await cosmos.createItem(process.env.COSMOS_CONTAINER || '', data);
 	} catch (err) {
 		context.log('Error saving to Cosmos DB:', err);
-		return { status: 500, body: 'Failed to save contact request' };
+		return { status: 500, body: 'Failed to save contact request::' + err };
 	}
 
 	try {
