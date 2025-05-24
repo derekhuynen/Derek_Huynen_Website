@@ -31,6 +31,7 @@ Welcome to my personal website! I am Derek Huynen, a Senior Software Developer. 
 ## 📦 Getting Started
 
 ### Prerequisites
+
 - Node.js (v18+ recommended)
 - npm or yarn
 
