@@ -12,9 +12,12 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { USER_NAME } from 'config/constants';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import ThemeToggle from './ThemeToggle';
 import SocialLinks from './SocialLinks';
 import { APPLICATION_ARRAY } from 'config/constants';
+import ThemeToggle from './ThemeToggle';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import useAppConfig from 'store/useAppConfig';
 
 const NavBar: React.FC = () => {
     const theme = useTheme();
@@ -23,6 +26,9 @@ const NavBar: React.FC = () => {
     const location = useLocation();
     const [scrolled, setScrolled] = React.useState(false);
     const navLinks = APPLICATION_ARRAY;
+    const themeStore = useAppConfig();
+    const isDarkMode = themeStore.theme === 'dark';
+    const setTheme = themeStore.setTheme;
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -50,6 +56,7 @@ const NavBar: React.FC = () => {
                 backgroundColor: scrolled ? (theme.palette.background.paper + 'F2' || '#fff') : 'transparent',
                 backdropFilter: scrolled ? 'blur(8px)' : undefined,
                 boxShadow: scrolled ? theme.shadows[4] : 'none',
+                overflow: 'hidden',
             }}
         >
             <Toolbar sx={{ px: { xs: 1, sm: 2 } }}>
@@ -85,8 +92,8 @@ const NavBar: React.FC = () => {
                                 {link.label}
                             </Button>
                         ))}
+                        <ThemeToggle />
                     </Box>
-                    <ThemeToggle />
                     {isMobile && (
                         <IconButton
                             edge="end"
@@ -107,6 +114,15 @@ const NavBar: React.FC = () => {
                     onClose={handleMenuClose}
                     anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                     transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+                    PaperProps={{
+                        sx: {
+                            minWidth: 180,
+                            borderRadius: 2,
+                            boxShadow: 4,
+                            bgcolor: theme.palette.background.paper,
+                            p: 1,
+                        },
+                    }}
                 >
                     {navLinks.map(link => (
                         <MenuItem
@@ -115,11 +131,56 @@ const NavBar: React.FC = () => {
                             to={link.route}
                             selected={location.pathname === link.route}
                             onClick={handleMenuClose}
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: 1.5,
+                                borderRadius: 1,
+                                fontWeight: 500,
+                                color: location.pathname === link.route ? 'primary.main' : 'text.primary',
+                                bgcolor: location.pathname === link.route ? 'action.selected' : 'transparent',
+                                '&:hover': {
+                                    bgcolor: 'action.hover',
+                                },
+                                px: 2,
+                                py: 1.2,
+                            }}
                         >
-                            {link.icon && <span style={{ marginRight: 8, display: 'flex', alignItems: 'center' }}><link.icon fontSize="small" /></span>}
-                            {link.label}
+                            {link.icon && <span style={{ display: 'flex', alignItems: 'center' }}><link.icon fontSize="small" /></span>}
+                            <span>{link.label}</span>
                         </MenuItem>
                     ))}
+                    {/* Theme toggle menu item for mobile */}
+                    <MenuItem
+                        onClick={() => {
+                            setTheme(isDarkMode ? 'light' : 'dark');
+                            handleMenuClose();
+                        }}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 1.5,
+                            borderRadius: 1,
+                            fontWeight: 500,
+                            px: 2,
+                            py: 1.2,
+                        }}
+                    >
+                        <span style={{ display: 'flex', alignItems: 'center' }}>
+                            {isDarkMode ? (
+                                <DarkModeIcon fontSize="small" color="primary" />
+                            ) : (
+                                <LightModeIcon fontSize="small" color="primary" />
+                            )}
+                        </span>
+                        <span style={{
+                            fontSize: 15,
+                            color: isDarkMode ? theme.palette.primary.light : theme.palette.primary.dark,
+                            fontWeight: 500,
+                        }}>
+                            {isDarkMode ? 'Dark' : 'Light'} Mode
+                        </span>
+                    </MenuItem>
                 </Menu>
             )}
         </AppBar>
