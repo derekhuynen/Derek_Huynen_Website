@@ -43,7 +43,8 @@ export const FOOTER_RIGHTS = 'Derek Huynen. All rights reserved.';
 
 export const AVATAR_URL = '/derekhuynen/avatar_derek-min.png';
 
-export const BASE_URL = 'http://localhost:7071/api';
+export const BASE_URL =
+	process.env.VITE_BASE_URL || 'http://localhost:7071/api';
 export const CONSTANT_ME_URL = '/contact_me';
 
 export const RESUME_URL = '/derekhuynen/resume_derekhuynen.pdf';
