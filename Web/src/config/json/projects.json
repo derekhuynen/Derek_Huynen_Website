@@ -61,7 +61,7 @@
         "type": "Work",
         "githubUrl": null,
         "websiteUrl": null,
-        "description": "AI-powered chatbot for PG&E to search and cross-check claims and regulatory documents, cutting compliance review time by 50%. Backend pipelines for document indexing, advanced search, and real-time Q&A features.",
+        "description": "AI-powered chatbot to search and cross-check claims and regulatory documents, cutting compliance review time by 50%. Backend pipelines for document indexing, advanced search, and real-time Q&A features.",
         "highlights": [
             "Cut compliance review time by 50%",
             "Advanced search and streaming responses",
