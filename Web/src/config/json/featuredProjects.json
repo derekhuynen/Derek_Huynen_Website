@@ -1,0 +1,44 @@
+[
+    {
+        "id": "linkedin_ai_auto_poster",
+        "title": "LinkedIn AI Auto Poster",
+        "description": "Automated system that uses AI to generate and schedule professional content for LinkedIn, posting daily at 9am.",
+        "imageUrl": "/projects/linkedin_auto_postser_min.png",
+        "tech": [
+            "node",
+            "typescript",
+            "openai",
+            "azure-functions",
+            "linkedin"
+        ],
+        "githubUrl": "https://github.com/derekhuynen/LinkedIn_AI_Auto_Poster"
+    },
+    {
+        "id": "ai_rag",
+        "title": "AI RAG System",
+        "description": "Modular Retrieval-Augmented Generation system that enhances AI responses with contextual knowledge from custom data sources.",
+        "imageUrl": "/projects/ai_rag_min.png",
+        "tech": [
+            "csharp",
+            "azure-functions",
+            "openai",
+            "semantic-kernel",
+            "azure-ai-search"
+        ],
+        "githubUrl": "https://github.com/derekhuynen/AI_RAG"
+    },
+    {
+        "id": "ai_agents",
+        "title": "AI Agents Framework",
+        "description": "Multi-agent LLM collaboration system using Azure Functions and Semantic Kernel, enabling specialized AI agents to solve complex tasks together.",
+        "imageUrl": "/projects/ai_agents_min.png",
+        "tech": [
+            "csharp",
+            "azure-functions",
+            "ai-agents",
+            "semantic-kernel",
+            "openai"
+        ],
+        "githubUrl": "https://github.com/derekhuynen/AI_Agents"
+    }
+]

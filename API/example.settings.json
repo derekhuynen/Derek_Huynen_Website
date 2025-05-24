@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "TELEGRAM_BOT_TOKEN": "#####",
+    "TELEGRAM_BOT_NAME": "#####",
+    "TELEGRAM_CHAT_ID": "####",
+    "COSMOS_ENDPOINT": "https://####.documents.azure.com:443/",
+    "COSMOS_KEY": "####",
+    "COSMOS_DATABASE": "###",
+    "COSMOS_CONTAINER": "###"
+  },
+  "Host": {
+    "CORS": "http://localhost:5173",
+    "CORSCredentials": true
+  }
+}

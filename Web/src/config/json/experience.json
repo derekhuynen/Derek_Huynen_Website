@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Senior Software Engineer",
+        "company": "Neudesic, Inc.",
+        "location": "",
+        "date": "Jan 2022 – Present",
+        "highlights": [
+            "Worked as a consultant for IBM, focusing on AI and cloud solutions.",
+            "Developed and deployed various AI-driven applications, including document automation, chatbots, and data pipelines.",
+            "Worked for clients in healthcare, utilities, and publishing industries.",
+            "Collaborated with cross-functional teams to deliver high-quality software solutions.",
+            "Led architecture discussions and design reviews to ensure best practices in software development.",
+            "Mentored junior developers and provided technical guidance on projects."
+        ]
+    },
+    {
+        "title": "Owner / Founder",
+        "company": "Pines Cabin Rentals",
+        "location": "Big Bear, CA",
+        "date": "Jan 2020 – Present",
+        "highlights": [
+            "Founded and manage a successful vacation rental business in the Big Bear.",
+            "Developed a custom website using React and Node.js to manage bookings and customer interactions.",
+            "Implemented a booking system with payment processing and calendar integration.",
+            "Utilized SEO best practices to increase online visibility and drive traffic to the website.",
+            "Managed customer service and communication, ensuring high satisfaction rates."
+        ]
+    },
+    {
+        "title": "IT and Web Development",
+        "company": "Del Sol School (Non-Profit)",
+        "location": "",
+        "date": "Jan 2018 – Jan 2020",
+        "highlights": [
+            "Developed and maintained the school's website using WordPress.",
+            "Built and maintains computers and network infrastructure for the school.",
+            "Provided technical support for staff and students, resolving hardware and software issues.",
+            "Worked with Google to get qualified as a Google for Education partner.",
+            "Applied to Tech Soup to get computers for the school.",
+            "Assisted in the implementation of educational technology tools to enhance learning experiences."
+        ]
+    }
+]

@@ -1,0 +1,231 @@
+[
+    {
+        "title": "Data Pipeline Automation for Hospital Rate Sheets",
+        "company": "IBM / Providence / Sirion Labs",
+        "role": "Lead Developer & Architect",
+        "date": "Feb 2024 – Mar 2025",
+        "startDate": "2024-02-01",
+        "endDate": "2025-03-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "Automated data pipeline to extract and standardize hospital rate sheet data from hundreds of unique PDFs, cutting manual processing time by 60%. Document classification system, custom parsing, and reusable algorithms for onboarding new formats. Sole developer, working directly with IBM and client teams.",
+        "highlights": [
+            "Cut manual processing time by 60%",
+            "Document classification and custom parsing",
+            "Reusable algorithms for rapid onboarding",
+            "Automated testing for high code quality"
+        ],
+        "tech": [
+            "node",
+            "typescript",
+            "azure-document-intelligence",
+            "jest"
+        ]
+    },
+    {
+        "title": "AI for Safety Document Automation",
+        "company": "IBM",
+        "role": "AI Developer",
+        "date": "Jan 2025 – Jan 2025",
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "Web tool using AI to scan, analyze, and summarize safety PDF reports, reducing manual review time by 50%. Features include Azure OCR, vector database storage, and AI-powered safety reports. Built React app for editing and chatting with AI about safety documents.",
+        "highlights": [
+            "Reduced manual review time by 50%",
+            "AI-powered report generation and summarization",
+            "Integrated Azure OCR and vector database"
+        ],
+        "tech": [
+            "react",
+            "javascript",
+            "csharp",
+            "dotnet",
+            "azure-functions",
+            "azure-openai",
+            "azure-document-intelligence",
+            "vector-db",
+            "azure-ai-search"
+        ]
+    },
+    {
+        "title": "Regulatory Compliance Chatbot (Azure GenAI POC)",
+        "company": "IBM / PG&E",
+        "role": "AI Developer",
+        "date": "Oct 2024 – Dec 2024",
+        "startDate": "2024-10-01",
+        "endDate": "2024-12-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "AI-powered chatbot for PG&E to search and cross-check claims and regulatory documents, cutting compliance review time by 50%. Backend pipelines for document indexing, advanced search, and real-time Q&A features.",
+        "highlights": [
+            "Cut compliance review time by 50%",
+            "Advanced search and streaming responses",
+            "Real-time Q&A and document cross-referencing"
+        ],
+        "tech": [
+            "react",
+            "tailwind",
+            "redux",
+            "csharp",
+            "typescript",
+            "azure-ai-search",
+            "azure-openai",
+            "node",
+            "pubsub"
+        ]
+    },
+    {
+        "title": "AI Contract Review Proof of Concept",
+        "company": "IBM / Constellation",
+        "role": "AI Developer",
+        "date": "Sep 2024 – Oct 2024",
+        "startDate": "2024-09-01",
+        "endDate": "2024-10-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "Microsoft Word plugin using AI to suggest contract edits and highlight key issues, speeding up legal review by 40%. Angular dashboard for contract management and real-time redlining suggestions inside Word.",
+        "highlights": [
+            "Speed up legal review by 40%",
+            "Real-time AI redlining in Word",
+            "Angular dashboard for contract management"
+        ],
+        "tech": [
+            "angular",
+            "typescript",
+            "csharp",
+            "node",
+            "azure-functions",
+            "openai"
+        ]
+    },
+    {
+        "title": "AI Book Search & Recommendation Platform",
+        "company": "HarperCollins",
+        "role": "AI Developer",
+        "date": "Apr 2024 – May 2024",
+        "startDate": "2024-04-01",
+        "endDate": "2024-05-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "AI-powered search tool for marketing teams to find and recommend books by topic, event, or person. Backend pipeline to process and vectorize book data, automated extraction of key book details, and smart recommendations using GPT-4 and metadata filters.",
+        "highlights": [
+            "Increased campaign targeting speed by 40%",
+            "Automated extraction of key book details",
+            "Smart recommendations using GPT-4"
+        ],
+        "tech": [
+            "node",
+            "typescript",
+            "azure-functions",
+            "gpt-4",
+            "azure-ai-search",
+            "react",
+            "rest-apis"
+        ]
+    },
+    {
+        "title": "Nurse Staffing Platform",
+        "company": "Amna Healthcare",
+        "role": "Application Developer",
+        "date": "Dec 2022 – Jan 2024",
+        "startDate": "2022-12-01",
+        "endDate": "2024-01-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "Web app for hospitals to post shifts and for nurses to search and book jobs nationwide. Improved job search speed, advanced filters, and reliable booking features. Used Redux, Redux-Saga, and automated tests for robust state management.",
+        "highlights": [
+            "Improved nurse job search speed by 25%",
+            "Advanced filters and easy booking",
+            "Automated tests for reliability"
+        ],
+        "tech": [
+            "react",
+            "redux",
+            "redux-saga",
+            "typescript",
+            "material-ui",
+            "rest-apis",
+            "agile",
+            "azure-devops"
+        ]
+    },
+    {
+        "title": "Credentialing Portal Project",
+        "company": "AMN Healthcare",
+        "role": "Application Developer",
+        "date": "Nov 2022 – Jun 2023",
+        "startDate": "2022-11-01",
+        "endDate": "2023-06-30",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "React-based admin portal automating credential checks for nurses, covering state and hospital rules. Real-time dashboards, streamlined credential management, and automated regression tests for safer updates.",
+        "highlights": [
+            "Improved user efficiency by 30%",
+            "Automated credential checks",
+            "Real-time dashboards and forms"
+        ],
+        "tech": [
+            "react",
+            "redux",
+            "typescript",
+            "material-ui",
+            "automated-testing",
+            "rest-apis",
+            "agile"
+        ]
+    },
+    {
+        "title": "Pines Cabin Rentals Website",
+        "company": "Pines Cabin Rentals",
+        "role": "Owner / Founder",
+        "date": "Jan 2020 – Present",
+        "startDate": "2020-01-01",
+        "endDate": null,
+        "type": "Personal",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "Custom website for vacation rental business in Big Bear. Booking system with payment processing, calendar integration, and SEO best practices. Managed customer service and communication.",
+        "highlights": [
+            "Custom booking system with payments",
+            "Calendar integration",
+            "SEO and customer service management"
+        ],
+        "tech": [
+            "typescript",
+            "react",
+            "node",
+            "strip"
+        ]
+    },
+    {
+        "title": "Del Sol School Website & IT",
+        "company": "Del Sol School",
+        "role": "IT and Web Development",
+        "date": "Jan 2018 – Jan 2020",
+        "startDate": "2018-01-01",
+        "endDate": "2020-01-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "description": "Developed and maintained the school's website using WordPress. Managed computers, network infrastructure, and provided technical support. Helped school become a Google for Education partner.",
+        "highlights": [
+            "Developed and maintained school website",
+            "Managed IT infrastructure",
+            "Google for Education partner qualification"
+        ],
+        "tech": [
+            "wordpress",
+            "google-workspace",
+            "networking"
+        ]
+    }
+]
