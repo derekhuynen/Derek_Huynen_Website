@@ -1,7 +1,7 @@
 [
     {
         "title": "Data Pipeline Automation for Hospital Rate Sheets",
-        "company": "IBM / Providence / Sirion Labs",
+        "company": "IBM",
         "role": "Lead Developer & Architect",
         "date": "Feb 2024 – Mar 2025",
         "startDate": "2024-02-01",
@@ -53,7 +53,7 @@
     },
     {
         "title": "Regulatory Compliance Chatbot (Azure GenAI POC)",
-        "company": "IBM / PG&E",
+        "company": "IBM",
         "role": "AI Developer",
         "date": "Oct 2024 – Dec 2024",
         "startDate": "2024-10-01",
@@ -81,7 +81,7 @@
     },
     {
         "title": "AI Contract Review Proof of Concept",
-        "company": "IBM / Constellation",
+        "company": "IBM",
         "role": "AI Developer",
         "date": "Sep 2024 – Oct 2024",
         "startDate": "2024-09-01",
@@ -106,7 +106,7 @@
     },
     {
         "title": "AI Book Search & Recommendation Platform",
-        "company": "HarperCollins",
+        "company": "IBM",
         "role": "AI Developer",
         "date": "Apr 2024 – May 2024",
         "startDate": "2024-04-01",
@@ -132,7 +132,7 @@
     },
     {
         "title": "Nurse Staffing Platform",
-        "company": "Amna Healthcare",
+        "company": "Healthcare Staffing",
         "role": "Application Developer",
         "date": "Dec 2022 – Jan 2024",
         "startDate": "2022-12-01",
@@ -159,7 +159,7 @@
     },
     {
         "title": "Credentialing Portal Project",
-        "company": "AMN Healthcare",
+        "company": "Heralthcare Staffing",
         "role": "Application Developer",
         "date": "Nov 2022 – Jun 2023",
         "startDate": "2022-11-01",
@@ -185,7 +185,7 @@
     },
     {
         "title": "Pines Cabin Rentals Website",
-        "company": "Pines Cabin Rentals",
+        "company": "Pines Cabin Rentals Website",
         "role": "Owner / Founder",
         "date": "Jan 2020 – Present",
         "startDate": "2020-01-01",
