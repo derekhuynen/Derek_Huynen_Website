@@ -2,6 +2,7 @@ import type { RouteObject } from 'react-router-dom';
 import MainLayout from 'ui/components/layouts/MainLayout';
 import { APPLICATION } from './constants';
 import NotFoundPage from 'ui/components/boundaries/NotFoundPage';
+import ProjectPage from 'ui/pages/projects/ProjectPage';
 
 const myRoutes: RouteObject[] = [
     {
@@ -24,10 +25,11 @@ const myRoutes: RouteObject[] = [
             },
             {
                 path: '/projects/:id',
-                lazy: async () => {
-                    const Component = await import('ui/pages/projects/ProjectPage');
-                    return { Component: Component.default };
-                },
+                element: <ProjectPage />
+                // lazy: async () => {
+                //     const Component = await import('ui/pages/projects/ProjectPage');
+                //     return { Component: Component.default };
+                // },
             },
             {
                 path: APPLICATION.Experiences.route,
