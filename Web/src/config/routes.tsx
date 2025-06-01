@@ -2,7 +2,6 @@ import type { RouteObject } from 'react-router-dom';
 import MainLayout from 'ui/components/layouts/MainLayout';
 import { APPLICATION } from './constants';
 import NotFoundPage from 'ui/components/boundaries/NotFoundPage';
-import ProjectPage from 'ui/pages/projects/ProjectPage';
 
 const myRoutes: RouteObject[] = [
     {
