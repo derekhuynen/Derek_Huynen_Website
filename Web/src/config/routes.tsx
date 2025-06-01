@@ -25,11 +25,11 @@ const myRoutes: RouteObject[] = [
             },
             {
                 path: '/projects/:id',
-                element: <ProjectPage />
-                // lazy: async () => {
-                //     const Component = await import('ui/pages/projects/ProjectPage');
-                //     return { Component: Component.default };
-                // },
+                // element: <ProjectPage />
+                lazy: async () => {
+                    const Component = await import('ui/pages/projects/ProjectPage');
+                    return { Component: Component.default };
+                },
             },
             {
                 path: APPLICATION.Experiences.route,
