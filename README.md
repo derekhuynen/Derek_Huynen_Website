@@ -4,7 +4,7 @@ Welcome to my personal website! I am Derek Huynen, a Senior Software Developer. 
 
 ## 🌐 Live Demo
 
-> Coming soon! (Or deploy locally — see below)
+Check out the live version of my personal website: [derekhuynen.com](https://derekhuynen.com)
 
 ---
 
