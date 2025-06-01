@@ -46,4 +46,23 @@ export const AVATAR_URL = '/derekhuynen/avatar_derek-min.png';
 export const BASE_URL = import.meta.env.VITE_BASE_URL || '';
 export const CONSTANT_ME_URL = '/api/contact_me';
 
-export const RESUME_URL = '/derekhuynen/resume_derekhuynen.pdf';
+export const RESUME_FILE_NAME = 'DerekHuynenResume.pdf';
+export const RESUME_URL = `/derekhuynen/${RESUME_FILE_NAME}`;
+
+export const WEBSITE_INFO = {
+	projects_page: {
+		title: 'Projects',
+		description: 'A showcase of my projects.',
+	},
+	experiences_page: {
+		title: 'Experiences',
+		description: 'A timeline of my professional experiences.',
+	},
+	home_page: {
+		hero: {
+			title: 'Senior Software Developer',
+			subtitle: 'Discover my projects, experiences, and skills.',
+			action: 'Contact Me',
+		},
+	},
+};

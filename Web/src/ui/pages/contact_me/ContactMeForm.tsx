@@ -52,6 +52,8 @@ const ContactMeForm: React.FC = () => {
             setSubmitError(message);
             showSnackbar(message, 'error', { anchorOrigin: { vertical: 'bottom', horizontal: 'center' } });
         },
+        retry: 2, // Retry up to 2 times on failure (total 3 attempts)
+        retryDelay: attemptIndex => 1000 * Math.pow(2, attemptIndex), // Exponential backoff: 1s, 2s
     });
 
     const { control, handleSubmit, formState: { errors }, reset } = useForm<ContactFormData>({

@@ -1,0 +1,198 @@
+[
+    {
+        "id": "001",
+        "title": "Commitment Issues",
+        "industry": "Personal Project",
+        "role": "Solo Developer",
+        "date": "Jan 2025 – Jan 2025",
+        "startDate": "2025-01-04",
+        "endDate": "2025-01-05",
+        "type": "Personal",
+        "githubUrl": "https://github.com/derekhuynen/Commitment_Issues",
+        "websiteUrl": null,
+        "short_description": "A playful PowerShell script to automate the creation of fake commits in a Git repository for a specified number of past days, simulating commit activity for fun or educational purposes.",
+        "full_description": "Commitment Issues is a lighthearted personal project designed to automate the process of generating fake commits in a Git repository. The PowerShell script, `create_commits.ps1`, prompts the user for the number of days to backdate commits, then iteratively updates a file (`update_file.txt`) and creates a commit for each day in the specified range. This simulates a streak of activity on the Git commit graph, which can be useful for demonstrations, learning, or just for fun.\n\nThe script checks that it is run inside a valid Git repository, uses today's date as the starting point, and creates or updates `update_file.txt` with incremental numbers. Each commit is staged and committed with the correct date using Git's environment variables.\n\nRepository: [github.com/derekhuynen/Commitment_Issues](https://github.com/derekhuynen/Commitment_Issues)",
+        "what_i_worked_on_arr": [
+            "Designed and implemented the PowerShell script to automate commit creation.",
+            "Added logic to check for a valid Git repository before running.",
+            "Implemented user prompts for the number of days to generate commits.",
+            "Automated file updates and commit creation with accurate timestamps.",
+            "Documented usage instructions and script prerequisites."
+        ],
+        "challenges": [
+            "Ensuring commits are backdated correctly and appear on the intended days. Solution: Used Git environment variables to set commit dates programmatically for each commit.",
+            "Making the script user-friendly and robust for different environments. Solution: Added checks for Git repository presence and clear user prompts.",
+            "Preventing accidental misuse or confusion about the script's purpose. Solution: Included clear documentation and a disclaimer about responsible use."
+        ],
+        "takeaways": [
+            "Gained experience with PowerShell scripting and Git automation.",
+            "Learned how to manipulate commit history for educational and demonstration purposes.",
+            "Reinforced the importance of clear documentation and ethical considerations in tooling.",
+            "Had fun experimenting with creative ways to visualize Git activity."
+        ],
+        "highlights": [
+            "Automated fake commit creation with PowerShell",
+            "Backdated commits for Git activity visualization",
+            "Robust user prompts and repo validation",
+            "Clear documentation and responsible use disclaimer"
+        ],
+        "tech": [
+            "powershell",
+            "git",
+            "automation",
+            "scripting"
+        ]
+    },
+    {
+        "id": "002",
+        "title": "LinkedIn AI Auto Poster",
+        "industry": "Personal Project",
+        "role": "Solo Developer",
+        "date": "May 2025 – current",
+        "startDate": "2025-05-10",
+        "endDate": "current",
+        "type": "Personal",
+        "githubUrl": "https://github.com/derekhuynen/LinkedIn_AI_Auto_Poster",
+        "websiteUrl": null,
+        "short_description": "AI-driven automation tool for generating and posting unique LinkedIn content using Azure OpenAI and Azure Functions. Schedules daily posts, archives content in Cosmos DB, and manages credentials securely with Azure Key Vault.",
+        "full_description": "LinkedIn AI Auto Poster is a robust automation tool that uses Azure Functions to schedule and execute daily content creation and posting to LinkedIn at 9 AM. The system employs Azure OpenAI to generate unique, relevant topics and high-quality post content, avoiding repetition and maximizing engagement. All posts are archived in Azure Cosmos DB for future analysis and repurposing. Secure environment management is achieved using Azure Key Vault and environment variables for sensitive credentials. The workflow includes content analysis, AI-driven topic and content generation, automated posting, and archiving for analytics.\n\nRepository: [github.com/derekhuynen/LinkedIn_AI_Auto_Poster](https://github.com/derekhuynen/LinkedIn_AI_Auto_Poster)",
+        "what_i_worked_on_arr": [
+            "Designed and implemented Azure Functions for scheduled automation.",
+            "Integrated Azure OpenAI for dynamic topic and content generation.",
+            "Developed LinkedIn API integration for direct posting.",
+            "Built Cosmos DB storage and retrieval logic for posts.",
+            "Managed secure environment configuration with Azure Key Vault.",
+            "Authored PowerShell scripts for infrastructure deployment.",
+            "Documented setup, configuration, and usage instructions."
+        ],
+        "challenges": [
+            "Ensuring unique, non-repetitive content generation. Solution: Implemented AI-driven topic selection with recent post analysis from Cosmos DB.",
+            "Securely managing API keys and sensitive credentials. Solution: Utilized Azure Key Vault and environment variables for secure storage.",
+            "Reliable automation and error handling in scheduled functions. Solution: Used robust error handling, retries, and comprehensive logging."
+        ],
+        "takeaways": [
+            "Gained hands-on experience with Azure Functions, OpenAI, and Cosmos DB integration.",
+            "Learned best practices for secure credential management in cloud applications.",
+            "Improved skills in automating social media workflows and leveraging AI for content creation.",
+            "Developed a scalable, extensible architecture for future multi-platform support and analytics."
+        ],
+        "highlights": [
+            "Automated daily LinkedIn posting with Azure Functions",
+            "AI-driven topic and content generation with Azure OpenAI",
+            "Cosmos DB archiving and analytics-ready storage",
+            "Secure credential management with Azure Key Vault",
+            "PowerShell automation for infrastructure deployment"
+        ],
+        "tech": [
+            "azure-functions",
+            "typescript",
+            "azure-openai",
+            "cosmosdb",
+            "azure-key-vaults",
+            "linkedin",
+            "powershell",
+            "node",
+            "automation",
+            "ai"
+        ]
+    },
+    {
+        "id": "003",
+        "title": "AI RAG Demo Solution",
+        "industry": "Personal Project",
+        "role": "Solo Developer",
+        "date": "May 2025 – May 2025",
+        "startDate": "2025-05-17",
+        "endDate": "2025-05-18",
+        "type": "Personal",
+        "githubUrl": "https://github.com/derekhuynen/AI_RAG",
+        "websiteUrl": null,
+        "short_description": "A modular Retrieval-Augmented Generation (RAG) demo solution built with C#, Semantic Kernel, Azure OpenAI, and Azure Functions. Demonstrates agent-based conversational AI, project ingestion, and hybrid search using Azure AI Search.",
+        "full_description": "The AI RAG Demo Solution is a comprehensive demonstration of Retrieval-Augmented Generation (RAG) using a modular, agent-based architecture. The backend is organized into several projects: core AI logic and agent orchestration (AIServices), an Azure Function API for chat (RagChatBotAPI), a document ingestion and embedding generation function (DocumentIngestion), and shared DTOs/interfaces (Shared). The solution leverages Semantic Kernel for orchestrating LLM calls and agent workflows, Azure OpenAI for both embeddings and completions, and Azure AI Search for hybrid search scenarios. Example project data is provided for ingestion and testing.\n\nRepository: [github.com/derekhuynen/AI_RAG](https://github.com/derekhuynen/AI_RAG)",
+        "what_i_worked_on_arr": [
+            "Designed and implemented modular agent architecture for RAG workflows.",
+            "Developed Azure Functions for chat API and document ingestion.",
+            "Integrated Semantic Kernel for LLM orchestration and agent coordination.",
+            "Connected Azure OpenAI for embeddings and completions.",
+            "Enabled hybrid search with Azure AI Search.",
+            "Authored documentation and setup instructions for each project component."
+        ],
+        "challenges": [
+            "Orchestrating multiple agents and services for flexible RAG workflows. Solution: Leveraged Semantic Kernel and modular service interfaces for extensibility.",
+            "Efficiently ingesting and embedding large project datasets. Solution: Built a dedicated Azure Function for bulk ingestion and embedding generation.",
+            "Supporting hybrid search and pluggable search backends. Solution: Designed the system to be search-provider agnostic with clear interfaces."
+        ],
+        "takeaways": [
+            "Gained experience with advanced RAG architectures and agent-based design.",
+            "Improved skills in Azure Functions, Semantic Kernel, and Azure OpenAI integration.",
+            "Learned best practices for modular, extensible backend solutions in conversational AI.",
+            "Built a foundation for future enhancements, such as multi-modal search and analytics."
+        ],
+        "highlights": [
+            "Modular agent-based RAG architecture",
+            "Azure Functions for chat and ingestion APIs",
+            "Semantic Kernel for LLM orchestration",
+            "Azure OpenAI for embeddings and completions",
+            "Hybrid and pluggable search with Azure AI Search",
+            "Comprehensive documentation and example data"
+        ],
+        "tech": [
+            "csharp",
+            "dotnet",
+            "azure-functions",
+            "semantic-kernel",
+            "azure-openai",
+            "azure-ai-search",
+            "agents"
+        ]
+    },
+    {
+        "id": "004",
+        "title": "Dual-Agent LLM System",
+        "industry": "Personal Project",
+        "role": "Solo Developer",
+        "date": "May 2025 – May 2025",
+        "startDate": "2025-05-11",
+        "endDate": "2025-05-12",
+        "type": "Personal",
+        "githubUrl": "https://github.com/derekhuynen/AI_Agents",
+        "websiteUrl": null,
+        "short_description": "A C# application demonstrating multi-agent LLM collaboration using Azure Functions and Semantic Kernel. Two specialized AI agents (Research and Writing) work together to solve complex tasks, leveraging Azure OpenAI for research and content generation.",
+        "full_description": "The Dual-Agent LLM System is a modular C# solution that showcases advanced multi-agent collaboration for AI-powered research and content generation. It uses Azure Functions as an HTTP API entry point, orchestrates two specialized agents (Research and Writing) via Semantic Kernel, and integrates with Azure OpenAI for both fast research (gpt-4o) and high-quality writing (gpt-4.1). The architecture is extensible, supporting custom plugins and new agent types for domain-specific workflows.\n\nRepository: [github.com/derekhuynen/AI_Agents](https://github.com/derekhuynen/AI_Agents)",
+        "what_i_worked_on_arr": [
+            "Designed and implemented the dual-agent architecture and workflow.",
+            "Developed Azure Functions for API access and agent coordination.",
+            "Integrated Semantic Kernel for robust LLM orchestration.",
+            "Built Research and Writing agents using different Azure OpenAI deployments.",
+            "Enabled extensibility with a plugin system and agent interface abstraction.",
+            "Authored documentation and setup instructions for local and cloud deployment."
+        ],
+        "challenges": [
+            "Coordinating multiple agents with different LLM deployments and roles. Solution: Used Semantic Kernel and a clear agent interface for modular orchestration.",
+            "Ensuring high-quality, contextually relevant content output. Solution: Implemented a research-to-writing pipeline with structured data handoff.",
+            "Supporting extensibility for future agent and plugin additions. Solution: Designed the system with interfaces and plugin support for easy expansion."
+        ],
+        "takeaways": [
+            "Gained experience with multi-agent LLM systems and orchestration patterns.",
+            "Improved skills in Azure Functions, Semantic Kernel, and Azure OpenAI integration.",
+            "Learned best practices for modular, extensible AI backend solutions.",
+            "Built a foundation for advanced content generation and knowledge workflows."
+        ],
+        "highlights": [
+            "Dual-agent architecture for research and writing",
+            "Azure Functions API entry point",
+            "Semantic Kernel orchestration",
+            "Azure OpenAI (gpt-4o, gpt-4.1) integration",
+            "Extensible plugin and agent system",
+            "Comprehensive documentation for deployment"
+        ],
+        "tech": [
+            "csharp",
+            "dotnet",
+            "azure-functions",
+            "semantic-kernel",
+            "azure-openai",
+            "plugin-system"
+        ]
+    }
+]

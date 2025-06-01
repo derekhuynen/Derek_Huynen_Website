@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Footer from 'ui/components/footer/Footer';
 import { Outlet } from 'react-router-dom';
 import NavBar from '../nav/NavBar';
+import ScrollToTop from '../ScrollToTop';
 
 
 const MainLayout = () => {
@@ -16,6 +17,7 @@ const MainLayout = () => {
                 alignItems: 'center',
             }}
         >
+            <ScrollToTop />
             <NavBar />
             <Box sx={{ flex: 1, width: '100%', maxWidth: 1200, display: 'flex' }}>
                 <Outlet />

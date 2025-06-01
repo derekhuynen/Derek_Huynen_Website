@@ -1,22 +1,30 @@
 import React, { useState } from 'react';
 import projectsData from 'config/json/projects.json';
+import personalProjectsData from 'config/json/personal_projects.json';
 import PageLayout from '../../components/layouts/PageLayout';
 import ProjectsFilter from './components/ProjectsFilter';
 import ProjectsGrid from './components/ProjectsGrid';
 import type { Project } from 'types/Project';
+import { WEBSITE_INFO } from 'config/constants';
 
 
 
 const ProjectsPage: React.FC = () => {
-    const [projects, setProjects] = useState<Project[]>(projectsData as Project[]);
+    // Sort allProjects by startDate descending (most recent first)
+    const allProjects = [...projectsData, ...personalProjectsData].sort((a, b) => {
+        const aDate = a.startDate ? new Date(a.startDate) : new Date(0);
+        const bDate = b.startDate ? new Date(b.startDate) : new Date(0);
+        return bDate.getTime() - aDate.getTime();
+    });
+    const [projects, setProjects] = useState<Project[]>(allProjects);
 
     return (
         <PageLayout
-            title="Projects"
-            description="Explore a curated collection of my software, AI, and web development projects. Use the search and filter options below to find projects by technology or keyword."
+            title={WEBSITE_INFO.projects_page.title}
+            description={WEBSITE_INFO.projects_page.description}
         >
             <ProjectsFilter
-                allProjects={projectsData as Project[]}
+                allProjects={allProjects}
                 setProjects={setProjects}
             />
             <ProjectsGrid projects={projects} />

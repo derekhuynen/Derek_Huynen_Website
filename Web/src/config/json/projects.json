@@ -1,231 +1,774 @@
 [
     {
-        "title": "Data Pipeline Automation for Hospital Rate Sheets",
-        "company": "IBM",
-        "role": "Lead Developer & Architect",
-        "date": "Feb 2024 – Mar 2025",
-        "startDate": "2024-02-01",
-        "endDate": "2025-03-31",
+        "id": "01",
+        "title": "Neu Evaluation",
+        "industry": "Technology Consulting",
+        "role": "Frontend Developer",
+        "date": "Jun 2022 – Oct 2022",
+        "startDate": "2022-06-07",
+        "endDate": "2022-10-07",
         "type": "Work",
         "githubUrl": null,
         "websiteUrl": null,
-        "description": "Automated data pipeline to extract and standardize hospital rate sheet data from hundreds of unique PDFs, cutting manual processing time by 60%. Document classification system, custom parsing, and reusable algorithms for onboarding new formats. Sole developer, working directly with IBM and client teams.",
+        "short_description": "Internal employee performance review platform for streamlined review, feedback, and evaluation. Built with React, TypeScript, and SaSS, deployed as an Azure Static Web App. Enabled employees and managers to submit, view, and track performance feedback, with a focus on user-friendly forms, maintainable styles, and agile DevOps practices.",
+        "full_description": "Neu Evaluation is an internal employee performance review system designed to streamline the review, feedback, and evaluation process across the organization. Employees can submit and view feedback on their performance in past and current projects. Managers are able to request reviews from peers, collect constructive feedback, and track the development of their team members over time. The platform allows individuals to view their profile, assess strengths and areas for improvement, and better understand the feedback they've received. This project provided insight into the company's agile practices, DevOps processes, and standards for code reviews and collaboration. The frontend was built with React and TypeScript, styled using SaSS, and used React Hook Form for form management and validation. The application was deployed as an Azure Static Web App, with source control and project management handled through Azure DevOps and GitHub.",
+        "what_i_worked_on_arr": [
+            "Developed user interfaces for submitting and viewing employee performance reviews.",
+            "Implemented profile views for users to access feedback, strengths, and areas of improvement.",
+            "Built form components using React Hook Form for submitting reviews and requests.",
+            "Styled application components using SaSS for maintainable, scalable CSS.",
+            "Participated in PR reviews, Agile ceremonies, and sprint planning.",
+            "Contributed to project documentation and knowledge sharing within the team.",
+            "Assisted with deployment to Azure Static Web Apps and coordinated with DevOps processes."
+        ],
+        "challenges": [
+            "Ensuring a smooth, user-friendly experience for submitting and viewing reviews. Solution: Focused on intuitive form design and implemented robust validation using React Hook Form.",
+            "Learning and adapting to the company's internal Agile and DevOps processes. Solution: Proactively engaged in Agile ceremonies, code reviews, and collaborated closely with team members to learn best practices.",
+            "Maintaining consistent and scalable styles across the application. Solution: Leveraged SaSS for modular, maintainable styles and promoted reuse of style components."
+        ],
+        "takeaways": [
+            "Gained foundational experience in working within a larger development team and following established Agile and DevOps practices.",
+            "Improved proficiency in React, TypeScript, SaSS, and Azure DevOps.",
+            "Learned best practices for code reviews, project management, and collaborative development.",
+            "Developed an understanding of effective employee feedback and review workflows in a corporate environment."
+        ],
         "highlights": [
-            "Cut manual processing time by 60%",
-            "Document classification and custom parsing",
-            "Reusable algorithms for rapid onboarding",
-            "Automated testing for high code quality"
+            "Developed UI for submitting and viewing performance reviews",
+            "Profile views for feedback, strengths, and improvement areas",
+            "Form components with React Hook Form and robust validation",
+            "Styled with SaSS for scalable, maintainable CSS",
+            "Participated in Agile ceremonies and PR reviews",
+            "Assisted with Azure Static Web App deployment and DevOps coordination"
         ],
         "tech": [
+            "react",
+            "typescript",
+            "sass",
+            "react-hook-form",
+            "azure-static-web-app",
+            "azure-devops",
+            "github",
+            "agile"
+        ]
+    },
+    {
+        "id": "02",
+        "title": "One Credentialing",
+        "industry": "Healthcare Staffing",
+        "role": "Frontend Developer",
+        "date": "Oct 2022 – Nov 2023",
+        "startDate": "2022-10-17",
+        "endDate": "2023-11-08",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "Rules engine and admin portal for a nurse staffing system, centralizing credentialing and compliance for hundreds of hospitals. Automated validation of nurse eligibility, certification, and compliance metrics. Enabled non-technical users to manage rules, visualize metrics, and audit enforcement. Extensive regression testing and agile practices ensured reliability in a compliance-driven environment.",
+        "full_description": "One Credentialing is a complex rules engine designed for a healthcare staffing ecosystem. The system serves as the centralized authority for credentialing nurses across hundreds of partner hospitals, ensuring compliance with state, federal, and facility-specific regulations. The engine automates the validation of nurse eligibility, certification status, work-hour restrictions, and other compliance metrics to determine shift assignments. A robust frontend admin portal allows non-technical users at a Healthcare Staffing Company to manage credentialing rules and requirements for diverse hospital partners. The solution includes comprehensive dashboards for monitoring requests, visualizing key metrics, and auditing rule enforcement. Given the sensitive and compliance-driven nature of healthcare staffing, extensive regression testing and agile development practices were central to the project’s success.",
+        "what_i_worked_on_arr": [
+            "Developed user interfaces and input forms for rule management, enabling business users to configure complex requirements without technical assistance.",
+            "Implemented state management with Redux and Redux-Sagas to handle complex rule logic and asynchronous data flows.",
+            "Built interactive dashboards to visualize credentialing metrics, request statuses, and rule enforcement outcomes.",
+            "Collaborated closely with QA to establish comprehensive regression testing procedures for ongoing releases.",
+            "Participated in Agile ceremonies, contributing to sprint planning, backlog grooming, and continuous improvement efforts.",
+            "Authored and maintained frontend components in Storybook for improved reusability and testing.",
+            "Assisted in onboarding new team members and shared best practices in frontend development and agile methodologies."
+        ],
+        "challenges": [
+            "Managing and visualizing hundreds of dynamic, facility-specific credentialing rules. Solution: Built an intuitive admin portal with advanced filtering and configuration features, using React, Redux, and custom UI components.",
+            "Ensuring changes to rules did not break existing logic across the ecosystem. Solution: Established rigorous regression testing processes and collaborated with QA to automate test coverage for rule changes.",
+            "Enabling non-technical staff to effectively update credentialing criteria. Solution: Designed user-friendly, validated forms and clear workflows, leveraging React Hook Form and Yup for robust input validation."
+        ],
+        "takeaways": [
+            "Gained significant experience in large-scale Agile projects and best practices for cross-functional team collaboration.",
+            "Deepened expertise in React, Redux, and advanced frontend architecture, including state management and component-driven development.",
+            "Developed a passion for frontend leadership, user experience, and clear communication within development teams.",
+            "Learned the critical importance of testing and validation in complex, compliance-heavy systems.",
+            "Recognized the value of building solutions that empower non-technical users and streamline operational workflows."
+        ],
+        "highlights": [
+            "Developed UI and forms for rule management by business users",
+            "Implemented Redux and Redux-Sagas for complex state management",
+            "Built dashboards for credentialing metrics and rule enforcement",
+            "Established regression testing with QA for ongoing releases",
+            "Participated in Agile ceremonies and continuous improvement",
+            "Authored reusable components in Storybook",
+            "Onboarded new team members and shared frontend best practices"
+        ],
+        "tech": [
+            "react",
+            "mui",
+            "react-hook-form",
+            "yup",
+            "redux",
+            "redux-sagas",
+            "storybook",
+            "webpack",
+            "react-router",
+            "azure-devops",
+            "agile"
+        ]
+    },
+    {
+        "id": "03",
+        "title": "Nurse Staffing Website",
+        "industry": "Healthcare Staffing",
+        "role": "Frontend Developer",
+        "date": "Nov 2023 – Jan 2024",
+        "startDate": "2023-11-13",
+        "endDate": "2024-01-26",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "Website for a Nurse Staffing platform enabling traveling nurses to find, book, and manage hospital shifts remotely. Robust filtering, complex forms, and secure booking processes. Built with React, Redux, and MUI, with state management via Redux-Sagas and project tracking in Azure DevOps.",
+        "full_description": "The Nurse Staffing Website is an online platform developed for a Healthcare Staffing Company to facilitate the booking of shifts by traveling nurses. The platform supports both web and mobile users, allowing nurses to browse available hospital shifts, filter and search for specific opportunities, apply, and manage bookings—all in one place. The project was a part of a large-scale initiative, spanning multiple teams and applications, focused on modernizing healthcare staffing operations. My team was responsible for the frontend web application, specifically the booking workflow. The website features robust filtering, complex forms, and secure booking processes. State management was a critical aspect, utilizing Redux and Redux-Sagas to ensure smooth data flows and reliable user experience. The backend, managed by another team, was built in C# with .NET, leveraging a full suite of API management tools.",
+        "what_i_worked_on_arr": [
+            "Developed the user interface for the nurse booking workflow, enabling nurses to view, filter, and book available shifts.",
+            "Built and tested complex forms using React Hook Form and Yup for input validation.",
+            "Implemented advanced filtering and search functionality for available positions.",
+            "Managed frontend state using Redux and Redux-Sagas, ensuring consistency and reliability across user sessions.",
+            "Collaborated closely with other frontend and backend teams to ensure seamless API integration.",
+            "Authored component documentation and stories using Storybook.",
+            "Wrote and maintained unit and integration tests for forms and state logic.",
+            "Contributed to Agile ceremonies and used Azure DevOps for project tracking and collaboration."
+        ],
+        "challenges": [
+            "Building and validating complex booking forms with multiple filters and dependencies. Solution: Leveraged React Hook Form and Yup to create flexible, reusable form components with robust validation logic.",
+            "Ensuring smooth state management across multiple user flows and asynchronous operations. Solution: Utilized Redux and Redux-Sagas for scalable, predictable state management, and implemented thorough testing for edge cases.",
+            "Coordinating development across multiple teams and applications (web, mobile, public-facing). Solution: Maintained clear communication through regular Agile ceremonies and established shared standards for API integration."
+        ],
+        "takeaways": [
+            "Gained hands-on experience with advanced form handling and validation in React.",
+            "Improved skills in large-scale state management with Redux and Redux-Sagas.",
+            "Enhanced understanding of cross-team collaboration within a large, multi-application project.",
+            "Learned the importance of thorough testing and documentation in maintaining high-quality deliverables.",
+            "Developed deeper knowledge of Agile processes and efficient project tracking with Azure DevOps."
+        ],
+        "highlights": [
+            "Developed UI for nurse booking workflow and shift management",
+            "Built and validated complex forms with React Hook Form and Yup",
+            "Implemented advanced filtering and search for positions",
+            "Managed state with Redux and Redux-Sagas for reliability",
+            "Collaborated with frontend and backend teams for API integration",
+            "Authored documentation and stories in Storybook",
+            "Maintained unit and integration tests for forms and state logic",
+            "Contributed to Agile ceremonies and project tracking in Azure DevOps"
+        ],
+        "tech": [
+            "react",
+            "mui",
+            "react-hook-form",
+            "yup",
+            "redux",
+            "redux-sagas",
+            "storybook",
+            "webpack",
+            "react-router",
+            "html",
+            "css",
+            "typescript",
+            "azure-devops",
+            "api-management",
+            "application-gateway",
+            "agile"
+        ]
+    },
+    {
+        "id": "04",
+        "title": "Github Access Hub",
+        "industry": "Internal IT",
+        "role": "Lead, Architect, Developer",
+        "date": "Feb 2024 – Mar 2024",
+        "startDate": "2024-02-05",
+        "endDate": "2024-03-08",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "Internal web app for employees to log in with company email and request access to company GitHub organizations. Automated onboarding and access management using Azure Entra ID, MSAL, and GitHub GraphQL API. Hosted as an Azure Static Web App with backend logic in C# Azure Functions. CI/CD automated with GitHub Actions. Designed, developed, and deployed as a solo project for IT automation and onboarding efficiency.",
+        "full_description": "Github Access Hub is an internal tool designed to streamline onboarding and access management for company GitHub organizations. The application allows any employee to securely log in with their company email via Azure Entra ID, view available GitHub organizations, and request access with a few clicks. This self-service portal reduces the workload for IT and onboarding teams by automating the invitation and approval process for GitHub organizations, leveraging the GitHub GraphQL API. The solution retrieves user information, current organization memberships, and manages access requests efficiently. The entire application was architected, developed, and deployed as a solo project, with a focus on maintainability and future scalability. The app is hosted as an Azure Static Web App, with the backend logic implemented via Azure Functions in C#. All deployments were automated using GitHub Actions, ensuring a robust CI/CD pipeline and minimal manual intervention.",
+        "what_i_worked_on_arr": [
+            "Solely architected and developed the application from the ground up.",
+            "Designed and implemented the Angular frontend for user authentication, organization listing, and access requests.",
+            "Developed C# Azure Functions to interface with the GitHub GraphQL API and handle business logic.",
+            "Integrated Azure Entra ID and MSAL for secure, company-only authentication.",
+            "Automated deployments to Azure using GitHub Actions and maintained project documentation for future scalability.",
+            "Set up GitHub Auth for secure API access and managed permissions for organization invitations.",
+            "Deployed and published the solution on the internal IT portal for company-wide use."
+        ],
+        "challenges": [
+            "Securing authentication to ensure only employees can access the portal. Solution: Integrated Azure Entra ID (Microsoft Identity Platform) with MSAL for robust, secure authentication and authorization.",
+            "Automating organization membership requests through GitHub's API. Solution: Built serverless Azure Functions in C# to interface directly with the GitHub GraphQL API for reliable data retrieval and automated invitation workflows.",
+            "Ensuring the project was maintainable for future handoff. Solution: Focused on clear, thorough documentation and modular architecture for easy onboarding by future developers."
+        ],
+        "takeaways": [
+            "Gained full-lifecycle experience as a solo architect, developer, and DevOps engineer on a business-critical internal tool.",
+            "Learned best practices for authentication and authorization using Azure Entra ID and MSAL.",
+            "Improved knowledge of GitHub’s GraphQL API and integration patterns with Azure serverless architecture.",
+            "Enhanced ability to document, organize, and automate deployment workflows for better maintainability and knowledge transfer.",
+            "Appreciated the importance of designing solutions that reduce repetitive IT workloads and improve onboarding efficiency."
+        ],
+        "highlights": [
+            "Solely architected and developed the application",
+            "Angular frontend for authentication, org listing, and access requests",
+            "C# Azure Functions for GitHub GraphQL API integration",
+            "Azure Entra ID and MSAL for secure authentication",
+            "Automated CI/CD with GitHub Actions",
+            "Clear documentation and modular architecture for maintainability",
+            "Deployed and published on internal IT portal"
+        ],
+        "tech": [
+            "angular",
+            "typescript",
+            "azure-static-web-app",
+            "csharp",
+            "dotnet",
+            "azure-functions",
+            "github-auth"
+        ]
+    },
+    {
+        "id": "05",
+        "title": "SOW AI Document Generation",
+        "industry": "Internal, POC",
+        "role": "Lead, AI Developer, Architect",
+        "date": "Mar 2024 – Mar 2024",
+        "startDate": "2024-03-11",
+        "endDate": "2024-03-29",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "Proof of concept leveraging AI to generate Statement of Work (SOW) documents from user-uploaded files and structured templates. End-to-end automation using React, Node.js, Azure Functions, CosmosDB, and Azure OpenAI. Demonstrated scalable, event-driven workflows and prompt engineering for document generation.",
+        "full_description": "The SOW Document Generation with AI project is an internal proof of concept created to streamline and automate the process of generating Statement of Work documents. Users upload various supporting documents for a sales engagement—including client information, meeting notes, and call transcripts—via a React-based web interface. Uploaded files are processed, stored in CosmosDB, and then passed through a workflow that leverages Azure OpenAI's large language models. These models analyze the source material and generate structured SOW sections according to strict company formats. The generated content is then compiled into both PDF and Word documents, which are automatically sent to the sales agent leading the engagement. The backend utilizes Azure Functions for event-driven processing, including blob storage triggers and queue-based workflows. The proof of concept demonstrates the feasibility of end-to-end document automation using AI, and highlights lessons learned in prompt engineering, document parsing, and scalable architecture.",
+        "what_i_worked_on_arr": [
+            "Solely architected and developed the entire solution from frontend to backend.",
+            "Built a React web interface for document uploads and workflow management, styled with Tailwind CSS.",
+            "Developed backend services in Node.js with Azure Functions to handle file processing, data storage, and integration with Azure OpenAI.",
+            "Designed and implemented data flows to CosmosDB and Azure Blob Storage, leveraging queues and triggers for automation.",
+            "Engineered AI prompts and workflows for generating SOW content sections from diverse, unstructured documents.",
+            "Automated PDF and Word document generation and email delivery to end users.",
+            "Documented architecture and processes for internal stakeholders and future iterations."
+        ],
+        "challenges": [
+            "Parsing and processing diverse, unstructured documents for AI input. Solution: Built robust file handling and preprocessing with Azure Blob Storage, storage queues, and custom Node.js logic.",
+            "Generating accurate, formatted SOW sections using large language models. Solution: Iterated on prompt engineering and document templates to maximize consistency and quality of outputs.",
+            "Automating document creation and delivery end-to-end. Solution: Leveraged Azure Functions to orchestrate file ingestion, AI processing, PDF/Word generation, and email notifications."
+        ],
+        "takeaways": [
+            "Developed hands-on expertise in AI-driven document generation and prompt engineering with Azure OpenAI.",
+            "Gained experience architecting scalable, event-driven workflows using Azure serverless technologies.",
+            "Improved skills in end-to-end application delivery, including file storage, processing, and automated communications.",
+            "Demonstrated ability to rapidly deliver proof of concept projects with significant business impact potential."
+        ],
+        "highlights": [
+            "Solely architected and developed the solution (frontend & backend)",
+            "React web interface for uploads and workflow management (Tailwind CSS)",
+            "Node.js backend with Azure Functions for file processing and AI integration",
+            "Data flows to CosmosDB, Azure Blob Storage, and queues for automation",
+            "Engineered AI prompts and workflows for SOW content generation",
+            "Automated PDF/Word generation and email delivery",
+            "Documented architecture and processes for stakeholders"
+        ],
+        "tech": [
+            "react",
+            "tailwind",
+            "react-hook-form",
+            "react-query",
+            "zustand",
+            "typescript",
+            "node",
+            "azure-functions",
+            "cosmosdb",
+            "azure-openai",
+            "zod",
+            "azure-static-web-app",
+            "azure-blob-storage",
+            "azure-storage-queues"
+        ]
+    },
+    {
+        "id": "06",
+        "title": "AI Chatbot for Book Publishing Company",
+        "industry": "Book Publishing",
+        "role": "AI Developer",
+        "date": "Apr 2024 – Jun 2024",
+        "startDate": "2024-04-08",
+        "endDate": "2024-06-14",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "AI Chatbot using Retrieval Augmented Generation (RAG) for searching and querying a large collection of books, enabling advanced semantic search and conversational responses for marketing and business use cases. Built with React, Node.js, Azure Functions, and Azure AI Search.",
+        "full_description": "The AI Chatbot for Book Publishing Company is a Retrieval Augmented Generation (RAG) solution developed to unlock the value of the publisher’s extensive book catalog. The system ingests the full text of books, chunking and vectorizing each page along with associated metadata such as genre, summary, chapter, page number, and other relevant details. All this data is indexed in Azure AI Search to enable powerful, semantic search capabilities. The chatbot enables marketing and business users to enter queries related to any subject, event, or keyword—for example, finding all books that mention ‘Taylor Swift’ in connection to a local event. The RAG pipeline searches the vectorized book data to find the most relevant pages, combines them with classic metadata filtering (by genre, year, etc.), and generates concise, context-aware responses via Azure OpenAI models. The backend, developed in Node.js with Azure Functions, handles the ingestion, chunking, vectorization, and orchestration of queries and model calls. The React frontend offers an intuitive chat interface for users to interact with the system, view matched results, and refine their searches with additional filters.",
+        "what_i_worked_on_arr": [
+            "Led the ingestion pipeline for processing books: parsing, chunking pages, extracting metadata, and vectorizing content.",
+            "Designed and implemented the RAG workflow, integrating Azure AI Search and OpenAI models for semantic search and response generation.",
+            "Developed backend logic in Node.js and Azure Functions to manage book data, metadata, embeddings, and query orchestration.",
+            "Collaborated on data modeling in CosmosDB for efficient storage and retrieval of book chunks and metadata.",
+            "Assisted with integrating the backend APIs with the React-based chatbot frontend.",
+            "Implemented advanced filtering mechanisms to combine vector search results with classic metadata filters (e.g., by year, genre, chapter)."
+        ],
+        "challenges": [
+            "Parsing, chunking, and extracting rich metadata from diverse book formats for ingestion. Solution: Developed robust text extraction and metadata parsing routines to capture all relevant data for each book and page, ensuring high-quality search and filtering.",
+            "Combining traditional metadata-based search (year, genre, etc.) with semantic, vector-based search. Solution: Engineered backend logic to blend classic filters with AI-driven vector similarity, enabling complex, multi-faceted queries and highly relevant results.",
+            "Ensuring scalability and performance for searching across a massive collection of book data. Solution: Leveraged Azure AI Search and CosmosDB for optimized indexing, retrieval, and filtering."
+        ],
+        "takeaways": [
+            "Deepened expertise in RAG architectures and large-scale data ingestion for AI-powered search applications.",
+            "Learned effective strategies for metadata extraction, document chunking, and combining traditional and AI-based search.",
+            "Gained hands-on experience with Azure AI Search, vector embeddings, and semantic query workflows.",
+            "Enhanced skills in collaborating on multi-disciplinary AI/ML product teams and delivering business value for large enterprise clients."
+        ],
+        "highlights": [
+            "Led ingestion pipeline for parsing, chunking, and vectorizing books",
+            "Designed and implemented RAG workflow with Azure AI Search and OpenAI",
+            "Developed backend logic for book data, embeddings, and query orchestration",
+            "Collaborated on CosmosDB data modeling for efficient storage/retrieval",
+            "Integrated backend APIs with React chatbot frontend",
+            "Implemented advanced filtering combining vector and metadata search"
+        ],
+        "tech": [
+            "react",
+            "redux",
+            "typescript",
+            "material-ui",
+            "tailwind",
+            "react-router",
+            "axios",
+            "node",
+            "azure-functions",
+            "cosmosdb",
+            "api-management",
+            "app-management",
+            "azure-ai-search",
+            "azure-openai"
+        ]
+    },
+    {
+        "id": "07",
+        "title": "IT Copilot Chat",
+        "industry": "Internal, POC",
+        "role": "Lead, AI Developer",
+        "date": "Jun 2024 – Jul 2024",
+        "startDate": "2024-06-17",
+        "endDate": "2024-07-12",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "Custom Copilot chatbot POC for IT, leveraging Azure Copilot Studio, SharePoint, and RAG to provide context-aware support and information retrieval from internal IT knowledge bases.",
+        "full_description": "IT Copilot Chat is an internal proof-of-concept project focused on building a custom Copilot chatbot for the IT team using the new Azure Copilot Studio. The objective was to evaluate the feasibility of grounding a conversational AI agent with organization-specific IT knowledge stored in SharePoint. This would allow employees to receive automated support and solutions tailored to the company's unique IT environment. To enable this, I developed a Node.js script that automated the download and upload of IT support articles from the company website to a SharePoint server. Using Azure Copilot Studio, I then created a custom Copilot agent connected to this SharePoint data source. I developed several custom skills and agentic flows to guide the chatbot's behavior, focusing on responding to internal support queries using the uploaded documentation. The solution was deployed for testing on the internal IT portal, where we conducted trial runs to assess its usefulness and quality of responses. Although the project was ultimately not adopted due to insufficient answer quality and limitations of the current AI Copilot tooling, it provided valuable insight into the capabilities and limitations of Microsoft's latest AI stack and emerging Copilot technologies.",
+        "what_i_worked_on_arr": [
+            "Led the initiative to design and develop a custom Copilot chatbot for IT support use cases.",
+            "Automated the ingestion of internal IT articles from the company website to SharePoint via Node.js scripting.",
+            "Configured Azure Copilot Studio to ground the chatbot with SharePoint knowledge and develop custom agent flows.",
+            "Designed and tested custom Copilot skills and conversational flows tailored to IT support scenarios.",
+            "Deployed the POC to the internal IT site and conducted extensive user testing and feedback collection.",
+            "Provided technical evaluation and recommendations on the viability of Microsoft Copilot Studio for future production use."
+        ],
+        "challenges": [
+            "Connecting and grounding Copilot with SharePoint data to ensure relevant and accurate answers. Solution: Developed a script to automate knowledge ingestion and configured data connectors within Copilot Studio for seamless integration.",
+            "Navigating and building with rapidly evolving, early-stage AI Copilot tools. Solution: Invested time in learning new paradigms, adapting to frequent changes, and iterating quickly with hands-on trial and error.",
+            "Achieving high-quality, production-ready answers from the Copilot agent. Solution: Experimented with custom skills, prompt flows, and feedback loops, ultimately concluding current limitations prevented production use."
+        ],
+        "takeaways": [
+            "Gained first-hand experience with Microsoft’s new Azure Copilot Studio and agentic AI workflows.",
+            "Learned about best practices and challenges for grounding conversational AI agents with enterprise knowledge bases like SharePoint.",
+            "Developed new skills in automating content ingestion and data integration for AI projects.",
+            "Recognized the current maturity level of Copilot Studio and its potential future role in enterprise AI solutions.",
+            "Provided technical recommendations for future adoption and standardization of Copilot tooling."
+        ],
+        "highlights": [
+            "Led the initiative to design and develop a custom Copilot chatbot for IT support use cases",
+            "Automated ingestion of IT articles from company website to SharePoint",
+            "Configured Copilot Studio and developed custom agent flows",
+            "Designed and tested Copilot skills for IT support scenarios",
+            "Deployed POC to internal IT site and conducted user testing",
+            "Provided technical evaluation and recommendations on Copilot Studio"
+        ],
+        "tech": [
+            "azure-copilot-studio",
+            "azure-openai",
+            "sharepoint"
+        ]
+    },
+    {
+        "id": "08",
+        "title": "Document Processing for Hospitals",
+        "industry": "Healthcare, Consulting",
+        "role": "Lead Developer, Architect",
+        "date": "Aug 2024 – Oct 2024",
+        "startDate": "2024-08-05",
+        "endDate": "2024-10-11",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "System to parse and standardize rate sheets from multiple hospitals, extracting structured data from a variety of PDF formats and storing it in a unified database. Built with Node.js, TypeScript, Azure Document Intelligence, and CosmosDB.",
+        "full_description": "Document Processing for Hospitals was a proof-of-concept engagement between IBM, and Hospital Consultant Company. The project’s goal was to automate the extraction and standardization of hospital rate sheets, which exist in numerous PDF formats and structures across hospitals nationwide. These rate sheets contain complex tables outlining pricing, insurance rates, and various hospital-specific metrics. The solution ingests PDFs from different hospitals, classifies the origin and structure of each document, and then uses Azure Document Intelligence (OCR) to extract tables and key information. Custom parsing functions—dynamically selected based on document classification—transform the extracted data into a standardized format, ready for storage in Azure CosmosDB. Robust testing (with Jest) and careful code organization ensured accuracy and scalability, even as requirements evolved and new hospital formats were added. Collaboration involved direct interaction with client teams at IBM and Hospital Consultant Company, focusing on technical delivery and iterative improvements.",
+        "what_i_worked_on_arr": [
+            "Architected and developed the end-to-end PDF ingestion, classification, and parsing pipeline.",
+            "Implemented document classification logic to identify hospitals and select appropriate parsing routines for each PDF.",
+            "Developed custom table extraction and data normalization functions using Azure Document Intelligence and Node.js.",
+            "Automated the upload, storage, and backup of large volumes of PDF documents via Azure Blob Storage.",
+            "Designed and maintained a unified schema for rate sheet data in Azure CosmosDB.",
+            "Built reusable parsing modules to maximize maintainability and reduce redundant code across varying hospital formats.",
+            "Wrote and maintained Jest tests to ensure data integrity and catch regressions as the parsing engine expanded.",
+            "Coordinated with IBM and Hospital Consultant Company to refine requirements and address client feedback in real-time."
+        ],
+        "challenges": [
+            "Handling a vast array of differing PDF formats and evolving rate sheet templates. Solution: Developed a robust classification and modular parsing architecture, enabling dynamic selection of parsing strategies and easy code reuse.",
+            "Maintaining organization and data integrity while managing hundreds of PDFs across hospitals, years, and document types. Solution: Implemented strict file organization, automated backups, and comprehensive testing to ensure reliability and scalability.",
+            "Ensuring updates to one hospital’s parsing logic did not break others. Solution: Focused on code modularity, reusable utility functions, and maintained a thorough suite of tests for all supported document types."
+        ],
+        "takeaways": [
+            "Learned advanced techniques for OCR, PDF parsing, and large-scale document standardization.",
+            "Improved project organization and code reuse practices for complex, data-driven applications.",
+            "Gained experience leading direct technical communications with multiple enterprise clients.",
+            "Enhanced testing strategies to maintain reliability as the codebase and supported formats expanded.",
+            "Recognized the critical role of flexible, modular architectures in rapidly evolving data extraction projects."
+        ],
+        "highlights": [
+            "Automated extraction and standardization of hospital rate sheets",
+            "Dynamic document classification and modular parsing",
+            "Azure Document Intelligence for OCR and table extraction",
+            "Unified schema and storage in Azure CosmosDB",
+            "Robust testing and code organization with Jest",
+            "Direct collaboration with IBM and Hospital Consultant Company"
+        ],
+        "tech": [
+            "vite",
             "node",
             "typescript",
+            "cosmosdb",
+            "azure-blob-storage",
             "azure-document-intelligence",
             "jest"
         ]
     },
     {
-        "title": "AI for Safety Document Automation",
-        "company": "IBM",
-        "role": "AI Developer",
-        "date": "Jan 2025 – Jan 2025",
-        "startDate": "2025-01-01",
-        "endDate": "2025-01-31",
+        "id": "09",
+        "title": "Contract Redlining",
+        "industry": "Legal Tech, Proof of Concept",
+        "role": "Developer",
+        "date": "Oct 2024 – Oct 2024",
+        "startDate": "2024-10-14",
+        "endDate": "2024-10-31",
         "type": "Work",
         "githubUrl": null,
         "websiteUrl": null,
-        "description": "Web tool using AI to scan, analyze, and summarize safety PDF reports, reducing manual review time by 50%. Features include Azure OCR, vector database storage, and AI-powered safety reports. Built React app for editing and chatting with AI about safety documents.",
+        "short_description": "Proof of concept Word plugin leveraging AI to assist legal teams in contract review and redlining by suggesting edits and highlighting key issues directly within Microsoft Word documents. Built with React, Typescript, Azure Functions, and Azure OpenAI.",
+        "full_description": "Contract Redlining is a proof of concept developed for a Law Firm, a client in the legal and contract management space. The solution is a Microsoft Word plugin designed to streamline the process of contract review and redlining using AI. The plugin extracts the full text of a contract from a Word document and sends it to an Azure OpenAI-powered backend, which uses tailored prompts and reference documentation to analyze and suggest edits, highlight issues, and identify important clauses that may need attention. Alongside the Word plugin, an Angular-based frontend was created for users to manage, view, and organize their documents and review AI-generated suggestions before making edits. This central hub allows users to select a document, open it in Word (either in-browser or desktop), and interact with the plugin for seamless AI-powered contract review. The backend, built with Azure Functions and C#, handles the processing, calls to Azure OpenAI, and returns actionable feedback to the plugin. While this project was executed quickly as part of a sales pitch, the proof of concept successfully demonstrated the core capabilities and laid the groundwork for future, more robust solutions.",
+        "what_i_worked_on_arr": [
+            "Developed components of the Microsoft Word plugin using React and Typescript to extract and display contract content.",
+            "Integrated the frontend plugin with backend Azure Functions for AI-powered content analysis and suggestions.",
+            "Contributed to the Angular-based UI for document management and visualization of AI suggestions.",
+            "Assisted in designing the backend workflow for processing contract documents and interacting with Azure OpenAI.",
+            "Participated in architecture diagramming and rapid prototyping to meet tight deadlines for the sales demo."
+        ],
+        "challenges": [
+            "Rapidly building a functional proof of concept within a short timeline. Solution: Focused on core workflows—Word plugin integration, AI analysis, and document management—prioritizing MVP features and clear architecture documentation.",
+            "Ensuring AI suggestions were relevant and actionable given varied contract language. Solution: Used targeted prompt engineering and incorporated company-provided documentation to improve the relevance of LLM suggestions.",
+            "Seamless user experience moving between document management and in-Word review. Solution: Developed an Angular dashboard for organizing and previewing documents, and ensured smooth interoperability with the Word plugin."
+        ],
+        "takeaways": [
+            "Gained experience building Office plugins and integrating them with modern web and AI technologies.",
+            "Learned best practices for rapid prototyping, architecture documentation, and demo-driven development.",
+            "Developed understanding of legal contract workflows and the practical application of LLMs in legal tech.",
+            "Enhanced skills in cross-team collaboration and delivering client-focused proof of concept solutions."
+        ],
         "highlights": [
-            "Reduced manual review time by 50%",
-            "AI-powered report generation and summarization",
-            "Integrated Azure OCR and vector database"
+            "Developed Word plugin for AI-powered contract review and redlining",
+            "Integrated Azure OpenAI for content analysis and suggestions",
+            "Angular dashboard for document management and AI preview",
+            "Rapid prototyping and architecture for sales demo",
+            "Seamless user experience between dashboard and Word plugin"
         ],
         "tech": [
             "react",
-            "javascript",
+            "typescript",
+            "html",
+            "tailwind",
+            "angular",
+            "azure-functions",
             "csharp",
             "dotnet",
-            "azure-functions",
-            "azure-openai",
-            "azure-document-intelligence",
-            "vector-db",
-            "azure-ai-search"
+            "cosmosdb",
+            "azure-static-web-app",
+            "azure-openai"
         ]
     },
     {
-        "title": "Regulatory Compliance Chatbot (Azure GenAI POC)",
-        "company": "IBM",
+        "id": "10",
+        "title": "GenAI ChatBot",
+        "industry": "Utilities, Enterprise AI",
         "role": "AI Developer",
-        "date": "Oct 2024 – Dec 2024",
-        "startDate": "2024-10-01",
-        "endDate": "2024-12-31",
+        "date": "Nov 2024 – Dec 2024",
+        "startDate": "2024-11-04",
+        "endDate": null,
         "type": "Work",
         "githubUrl": null,
         "websiteUrl": null,
-        "description": "AI-powered chatbot to search and cross-check claims and regulatory documents, cutting compliance review time by 50%. Backend pipelines for document indexing, advanced search, and real-time Q&A features.",
+        "short_description": "Enterprise GenAI chatbot for internal staff at a major gas and electric company. Enables conversational access to regulatory documents, internal articles, and claims reports with chat history, citations, and advanced RAG workflows. Built with React, C#/.NET, Azure Functions, Semantic Kernel, CosmosDB, PostgresDB, and Azure OpenAI.",
+        "full_description": "GenAI ChatBot is an enterprise-grade AI chatbot developed for internal use at a Gas and Electric Company. The system ingests, chunks, and vectorizes both internal documents (claims reports, articles) and government regulatory materials. All data is indexed in Azure AI Search, enabling semantic retrieval and conversational queries with real-time citations and references. The chatbot leverages RAG architecture to provide grounded, reliable responses by retrieving the most relevant content and combining it with generative answers from Azure OpenAI models. Staff can ask about specific regulatory changes, cross-reference policies, and verify compliance directly within the chat interface. Key features include chat history, accurate citations, and the ability to 'redline' internal documents by matching them to up-to-date regulations. The backend, built in C# with .NET and Semantic Kernel, streams responses to a modern React frontend via WebSockets for real-time interactivity. Azure Functions support additional processing, including managing pub/sub messaging and background document ingestion. Robust API management and private endpoints ensure secure access and integration across the enterprise.",
+        "what_i_worked_on_arr": [
+            "Led the ingestion and vectorization of internal claims reports and regulatory documents, including data chunking and metadata extraction.",
+            "Developed and optimized the RAG workflow, combining Azure AI Search with Azure OpenAI for context-aware answers.",
+            "Implemented citation and reference mechanisms for transparent, traceable responses in the chat interface.",
+            "Integrated Semantic Kernel with C#/.NET for advanced orchestration of AI and retrieval flows.",
+            "Designed and supported chat history management and user context handling via Azure PostgresDB and CosmosDB.",
+            "Supported the build-out of a streaming chat interface using React, Redux, and WebSockets.",
+            "Assisted with API gateway, private endpoint setup, and Azure DevOps pipelines for enterprise deployment."
+        ],
+        "challenges": [
+            "Combining regulatory and internal data for accurate, context-rich responses. Solution: Built multi-index RAG pipelines and fine-tuned metadata handling for effective filtering, retrieval, and grounding.",
+            "Ensuring reliability, transparency, and traceability of AI-generated responses. Solution: Implemented real-time citations, integrated chat history, and enabled audit trails for regulatory compliance.",
+            "Delivering a scalable, secure solution within a large enterprise environment. Solution: Leveraged Azure API Management, private endpoints, and role-based access control; built robust streaming and background processing workflows."
+        ],
+        "takeaways": [
+            "Deepened expertise in large-scale RAG architectures and enterprise AI chatbot solutions.",
+            "Gained practical experience in metadata-driven search optimization and semantic query workflows.",
+            "Improved understanding of integrating AI, retrieval, and compliance in highly regulated industries.",
+            "Enhanced skills in secure, cloud-native solution delivery using advanced Azure services and DevOps best practices.",
+            "Recognized the importance of citations, transparency, and data traceability in critical enterprise AI applications."
+        ],
         "highlights": [
-            "Cut compliance review time by 50%",
-            "Advanced search and streaming responses",
-            "Real-time Q&A and document cross-referencing"
+            "Enterprise GenAI chatbot for regulatory and internal document access",
+            "Advanced RAG workflows with Azure AI Search and OpenAI",
+            "Real-time citations and chat history for compliance",
+            "Streaming chat interface with React, Redux, and WebSockets",
+            "Backend orchestration with C#/.NET and Semantic Kernel",
+            "Secure, scalable deployment with API Management and private endpoints"
         ],
         "tech": [
             "react",
             "tailwind",
             "redux",
             "csharp",
+            "dotnet",
+            "azure-functions",
+            "semantic-kernel",
+            "websocket",
             "typescript",
+            "cosmosdb",
+            "postgresdb",
+            "azure-app-service",
+            "application-gateway",
+            "api-management",
+            "azure-event-hub",
             "azure-ai-search",
             "azure-openai",
-            "node",
-            "pubsub"
-        ]
-    },
-    {
-        "title": "AI Contract Review Proof of Concept",
-        "company": "IBM",
-        "role": "AI Developer",
-        "date": "Sep 2024 – Oct 2024",
-        "startDate": "2024-09-01",
-        "endDate": "2024-10-31",
-        "type": "Work",
-        "githubUrl": null,
-        "websiteUrl": null,
-        "description": "Microsoft Word plugin using AI to suggest contract edits and highlight key issues, speeding up legal review by 40%. Angular dashboard for contract management and real-time redlining suggestions inside Word.",
-        "highlights": [
-            "Speed up legal review by 40%",
-            "Real-time AI redlining in Word",
-            "Angular dashboard for contract management"
-        ],
-        "tech": [
-            "angular",
-            "typescript",
-            "csharp",
-            "node",
-            "azure-functions",
-            "openai"
-        ]
-    },
-    {
-        "title": "AI Book Search & Recommendation Platform",
-        "company": "IBM",
-        "role": "AI Developer",
-        "date": "Apr 2024 – May 2024",
-        "startDate": "2024-04-01",
-        "endDate": "2024-05-31",
-        "type": "Work",
-        "githubUrl": null,
-        "websiteUrl": null,
-        "description": "AI-powered search tool for marketing teams to find and recommend books by topic, event, or person. Backend pipeline to process and vectorize book data, automated extraction of key book details, and smart recommendations using GPT-4 and metadata filters.",
-        "highlights": [
-            "Increased campaign targeting speed by 40%",
-            "Automated extraction of key book details",
-            "Smart recommendations using GPT-4"
-        ],
-        "tech": [
-            "node",
-            "typescript",
-            "azure-functions",
-            "gpt-4",
-            "azure-ai-search",
-            "react",
-            "rest-apis"
-        ]
-    },
-    {
-        "title": "Nurse Staffing Platform",
-        "company": "Healthcare Staffing",
-        "role": "Application Developer",
-        "date": "Dec 2022 – Jan 2024",
-        "startDate": "2022-12-01",
-        "endDate": "2024-01-31",
-        "type": "Work",
-        "githubUrl": null,
-        "websiteUrl": null,
-        "description": "Web app for hospitals to post shifts and for nurses to search and book jobs nationwide. Improved job search speed, advanced filters, and reliable booking features. Used Redux, Redux-Saga, and automated tests for robust state management.",
-        "highlights": [
-            "Improved nurse job search speed by 25%",
-            "Advanced filters and easy booking",
-            "Automated tests for reliability"
-        ],
-        "tech": [
-            "react",
-            "redux",
-            "redux-saga",
-            "typescript",
-            "material-ui",
-            "rest-apis",
-            "agile",
             "azure-devops"
         ]
     },
     {
-        "title": "Credentialing Portal Project",
-        "company": "Healthcare Staffing",
-        "role": "Application Developer",
-        "date": "Nov 2022 – Jun 2023",
-        "startDate": "2022-11-01",
-        "endDate": "2023-06-30",
+        "id": "11",
+        "title": "Prospec AI",
+        "industry": "Internal, Sales Enablement",
+        "role": "AI Developer",
+        "date": "Jan 2025 – Mar 2025",
+        "startDate": "2025-01-06",
+        "endDate": "2025-03-20",
         "type": "Work",
         "githubUrl": null,
         "websiteUrl": null,
-        "description": "React-based admin portal automating credential checks for nurses, covering state and hospital rules. Real-time dashboards, streamlined credential management, and automated regression tests for safer updates.",
+        "short_description": "AI-powered sales research tool for internal sales teams, leveraging AI and third-party APIs to deliver actionable insights and tailored sales recommendations. Built with React, C#, Azure Functions, Semantic Kernel, and Azure OpenAI.",
+        "full_description": "Prospec AI is an internal sales intelligence platform designed to empower the sales team with up-to-date and relevant information on thousands of potential clients. By uploading a list of over 3,000 target companies, the tool automatically gathers public and third-party API data on each client, including their tech stack, recent news, and business context. Using Azure OpenAI and the Semantic Kernel, the system analyzes client data to generate custom sales reports for each target, recommending tailored approaches, immediate sales opportunities, and long-term strategies based on Neudesic’s current products and market positioning. All generated insights, as well as the source data, are stored in CosmosDB and made accessible through a user-friendly React-based web application. This solution enables the sales department to approach new prospects with rich, AI-driven intelligence—saving hours of manual research and increasing the chances of landing deals with more relevant, personalized outreach.",
+        "what_i_worked_on_arr": [
+            "Led the team in designing and building both the frontend and backend of the application.",
+            "Architected the workflow for ingesting and enriching a large list of client companies using third-party APIs.",
+            "Integrated Azure OpenAI and Semantic Kernel to analyze client data and generate actionable sales insights.",
+            "Developed and maintained the backend in C# and .NET, implementing robust API and data processing logic.",
+            "Built the React frontend using MUI, Zustand, and modern React tooling for a responsive, efficient user experience.",
+            "Oversaw code reviews, managed Agile storyboards, and led team meetings with the product owner.",
+            "Ensured seamless storage, retrieval, and presentation of all client data and AI-generated reports using Azure CosmosDB."
+        ],
+        "challenges": [
+            "Gathering and normalizing current, relevant data for thousands of companies from disparate sources. Solution: Automated data collection using scalable API integrations and robust normalization logic before passing data to the AI models.",
+            "Generating meaningful, actionable, and client-specific sales insights with AI. Solution: Designed prompt workflows and semantic search strategies leveraging Semantic Kernel and Azure OpenAI for relevant, context-aware recommendations.",
+            "Coordinating a multi-disciplinary team and managing rapid development cycles. Solution: Provided technical leadership, organized storyboards, code reviews, and maintained strong communication with stakeholders."
+        ],
+        "takeaways": [
+            "Developed expertise in orchestrating AI and data enrichment workflows for sales enablement.",
+            "Gained practical experience with Microsoft Semantic Kernel and Azure OpenAI in production scenarios.",
+            "Improved skills in integrating third-party data, automating research, and tailoring insights for business value.",
+            "Strengthened abilities in team leadership, Agile project management, and cross-functional delivery.",
+            "Learned the impact of AI-driven intelligence in streamlining and elevating the sales process."
+        ],
         "highlights": [
-            "Improved user efficiency by 30%",
-            "Automated credential checks",
-            "Real-time dashboards and forms"
+            "AI-powered sales research and enablement platform",
+            "Automated data enrichment from third-party APIs",
+            "Semantic Kernel and Azure OpenAI for tailored sales insights",
+            "React frontend with MUI, Zustand, and modern tooling",
+            "Robust backend with C#, .NET, and Azure Functions",
+            "CosmosDB storage for all client data and AI reports"
         ],
         "tech": [
             "react",
-            "redux",
+            "mui",
+            "zustand",
+            "react-hook-form",
+            "react-query",
+            "react-router",
+            "typescript",
+            "azure-static-web-app",
+            "csharp",
+            "dotnet",
+            "azure-functions",
+            "semantic-kernel",
+            "cosmosdb",
+            "azure-openai",
+            "third-party-api"
+        ]
+    },
+    {
+        "id": "12",
+        "title": "Safety Report Generation with AI",
+        "industry": "Consulting, POC",
+        "role": "AI Developer",
+        "date": "Mar 2025 – Mar 2025",
+        "startDate": "2025-03-10",
+        "endDate": "2025-03-31",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "POC for automating safety report generation from PDF documents using RAG, Azure Document Intelligence, and Azure OpenAI. Enables AI-powered chatbot and standardized, multi-section safety reports with React UI.",
+        "full_description": "The Safety Report Generation with AI project was a proof of concept engagement in partnership with IBM, aimed at automating the extraction and analysis of safety-related content from PDF documents. The system utilizes Azure Document Intelligence (OCR) to extract structured text from incoming PDFs. Extracted text is chunked and vectorized, then stored in Azure AI Search to support retrieval-augmented generation (RAG) and chatbot functionality. A key deliverable was generating detailed safety reports from ingested content, using advanced prompt engineering and Azure OpenAI. The reports are generated in a strict format, with different sections created by separate models and then compiled into a complete document. Generated reports are stored in Azure Blob Storage and presented in a React web application, where users can review, edit, and interact with them. A built-in AI chatbot enables staff to ask questions about the reports or request on-the-fly updates and edits, with AI-powered inline editing. Collaboration between IBM and Neudesic developers ensured robust architecture, efficient processing, and iterative prompt refinement for optimal results.",
+        "what_i_worked_on_arr": [
+            "Developed the pipeline for ingesting and parsing PDFs with Azure Document Intelligence and extracting structured data.",
+            "Implemented chunking, vectorization, and storage of document content in Azure AI Search and CosmosDB for efficient retrieval.",
+            "Engineered AI prompt workflows to generate multi-section safety reports using Azure OpenAI, dividing responsibilities among multiple models for scalability and quality.",
+            "Built and integrated the React frontend for browsing, reviewing, and editing safety reports, with Material UI and Tailwind styling.",
+            "Developed chatbot integration to allow users to ask questions and make inline edits to safety reports using LLM-based responses.",
+            "Participated in prompt engineering experimentation, model selection, and combining section outputs for cohesive, token-efficient reports."
+        ],
+        "challenges": [
+            "Parsing and standardizing unstructured safety information from varied PDF formats. Solution: Leveraged Azure Document Intelligence for OCR and designed robust chunking/vectorization logic for effective storage and retrieval.",
+            "Generating comprehensive, well-structured safety reports within token limits and model constraints. Solution: Split the report generation into sections handled by different models, then used an additional model to combine and refine the final report.",
+            "Providing interactive editing and AI support within the report management UI. Solution: Developed a React-based UI with inline editing and an AI-powered chatbot to handle user queries and generate on-demand updates."
+        ],
+        "takeaways": [
+            "Strengthened experience with end-to-end RAG pipelines, document OCR, and AI-based report generation.",
+            "Gained insights into prompt engineering and multi-model orchestration for complex, multi-section outputs.",
+            "Improved skills in collaborative POC delivery and requirements iteration with enterprise partners.",
+            "Recognized best practices for combining automated document processing with user-driven AI workflows for compliance and efficiency."
+        ],
+        "highlights": [
+            "Automated safety report generation from PDFs using RAG",
+            "Azure Document Intelligence for OCR and data extraction",
+            "Multi-model prompt workflows for structured report output",
+            "React UI for report review, editing, and chatbot interaction",
+            "AI-powered inline editing and on-demand report updates",
+            "Collaboration with IBM and Neudesic for robust POC delivery"
+        ],
+        "tech": [
+            "react",
+            "tailwind",
             "typescript",
             "material-ui",
-            "automated-testing",
-            "rest-apis",
-            "agile"
-        ]
-    },
-    {
-        "title": "Pines Cabin Rentals Website",
-        "company": "Pines Cabin Rentals Website",
-        "role": "Owner / Founder",
-        "date": "Jan 2020 – Present",
-        "startDate": "2020-01-01",
-        "endDate": null,
-        "type": "Personal",
-        "githubUrl": null,
-        "websiteUrl": null,
-        "description": "Custom website for vacation rental business in Big Bear. Booking system with payment processing, calendar integration, and SEO best practices. Managed customer service and communication.",
-        "highlights": [
-            "Custom booking system with payments",
-            "Calendar integration",
-            "SEO and customer service management"
-        ],
-        "tech": [
-            "typescript",
-            "react",
+            "azure-functions",
             "node",
-            "strip"
+            "cosmosdb",
+            "azure-document-intelligence",
+            "azure-openai",
+            "azure-ai-search",
+            "azure-blob-storage"
         ]
     },
     {
-        "title": "Del Sol School Website & IT",
-        "company": "Del Sol School",
-        "role": "IT and Web Development",
-        "date": "Jan 2018 – Jan 2020",
-        "startDate": "2018-01-01",
-        "endDate": "2020-01-31",
+        "id": "13",
+        "title": "Asset Marketplace",
+        "industry": "Internal Tools, Resource Management",
+        "role": "Lead, Architect, Developer",
+        "date": "Feb 2025 – Apr 2025",
+        "startDate": "2025-02-01",
+        "endDate": "2025-04-02",
         "type": "Work",
         "githubUrl": null,
         "websiteUrl": null,
-        "description": "Developed and maintained the school's website using WordPress. Managed computers, network infrastructure, and provided technical support. Helped school become a Google for Education partner.",
+        "short_description": "Internal marketplace platform to manage and showcase all ongoing projects, accelerators, and reusable assets. Built as a hybrid app with React frontend and Power Platform backend (Dataverse, Power Apps, Power Automate) to improve transparency and efficiency in staff allocation and project onboarding.",
+        "full_description": "The Asset Marketplace is an internal application built to centralize and make discoverable all projects, accelerators, and reusable assets across the organization. Designed as part of a new company-wide initiative, the platform enables staff to easily find available projects, see their requirements, access documentation, and connect with project owners—ultimately driving more efficient resource management and transparency. This hybrid solution combines the strengths of Microsoft Power Platform (Dataverse for backend storage, Power Apps/Power Automate for business logic and workflows) with the flexibility and rich UI of a custom React frontend. Through extensive OData integration and custom API calls, the React application interfaces seamlessly with Dataverse, enabling dynamic interactions and a more user-friendly experience compared to traditional Power Apps canvases or pages. The marketplace supports staff onboarding, project handoffs, and continuous knowledge sharing by consolidating all critical project and asset information in one accessible location.",
+        "what_i_worked_on_arr": [
+            "Led the architectural design and full-stack development of the hybrid platform.",
+            "Developed and integrated the custom React frontend, including authentication and advanced forms, with Power Platform backend using OData APIs.",
+            "Modeled data relationships and workflows in Dataverse and Power Apps to support complex queries and business logic.",
+            "Implemented Power Automate flows to streamline notifications, updates, and project lifecycle management.",
+            "Coordinated cross-team collaboration with Power Platform and traditional development groups.",
+            "Conducted research and testing to optimize OData queries, API performance, and security.",
+            "Oversaw rollout and adoption as part of the 2025 company initiative, providing documentation and internal training."
+        ],
+        "challenges": [
+            "Integrating custom React frontend with Power Platform and Dataverse for real-time data management. Solution: Developed robust OData-based API layers, leveraging custom authentication and dynamic query handling for a seamless hybrid experience.",
+            "Navigating complex data relationships and business logic in Dataverse/Power Apps environment. Solution: Spent significant time modeling tables, relationships, and permissions, and used Power Automate to handle key workflow automation.",
+            "Providing a flexible, extensible UI while maintaining alignment with enterprise data governance. Solution: Chose a hybrid architecture to combine Power Platform's security and workflow strengths with React's flexibility and UX potential."
+        ],
+        "takeaways": [
+            "Gained hands-on experience architecting and delivering hybrid solutions combining Power Platform and custom frontends.",
+            "Developed deep expertise in Dataverse data modeling, OData integration, and Power Apps/Power Automate workflows.",
+            "Improved understanding of internal transparency, resource allocation, and project management best practices.",
+            "Demonstrated leadership in cross-functional teams, technical research, and organizational change initiatives."
+        ],
         "highlights": [
-            "Developed and maintained school website",
-            "Managed IT infrastructure",
-            "Google for Education partner qualification"
+            "Hybrid app with React frontend and Power Platform backend",
+            "OData integration for real-time Dataverse data access",
+            "Advanced forms and authentication with React and MSAL",
+            "Power Automate flows for notifications and lifecycle management",
+            "Dataverse data modeling and workflow automation",
+            "Cross-team collaboration and internal rollout leadership"
         ],
         "tech": [
-            "wordpress",
-            "google-workspace",
-            "networking"
+            "react",
+            "typescript",
+            "react-query",
+            "react-hook-form",
+            "power-platform",
+            "power-apps",
+            "power-automate",
+            "dataverse",
+            "sql"
+        ]
+    },
+    {
+        "id": "14",
+        "title": "Value Stream Mapping with GitHub Copilot Training",
+        "industry": "Claims Management, Developer Productivity",
+        "role": "Developer Productivity Engineer",
+        "date": "Apr 2025 – May 2025",
+        "startDate": "2025-04-07",
+        "endDate": "2025-05-16",
+        "type": "Work",
+        "githubUrl": null,
+        "websiteUrl": null,
+        "short_description": "Value stream mapping and tailored GitHub Copilot workshops for a large claims management company. Combined DevOps metrics analysis with hands-on Copilot training and prompt engineering to improve developer productivity.",
+        "full_description": "This project was a dual initiative for Sedgwick, a leading claims management company. The engagement began with value stream mapping of their software development lifecycle: collaborating with leadership and development teams to analyze and document current processes, gathering metrics such as lead times and cycle times to establish a productivity baseline. Based on these insights, custom GitHub Copilot training workshops were designed and delivered to three separate teams within a single department. The workshops focused on practical Copilot usage tailored to the teams’ real workflows, challenges, and technology stack, including .NET and React. Targeted examples and prompt engineering exercises were provided, enabling developers to improve code quality, speed, and DevOps efficiency. A dashboard was set up to monitor ongoing productivity metrics and measure the long-term impact of the Copilot adoption and training.",
+        "what_i_worked_on_arr": [
+            "Conducted value stream mapping sessions to document and quantify development bottlenecks, lead times, and cycle times.",
+            "Collaborated with leadership and developers to collect and analyze DevOps metrics.",
+            "Designed and led GitHub Copilot training workshops, including live demos, Q&A, and targeted examples based on real codebases and workflows.",
+            "Developed custom prompt engineering exercises and Copilot use cases to address specific team needs.",
+            "Built and deployed a dashboard to track post-training developer productivity and Copilot usage metrics.",
+            "Provided follow-up resources and recommendations for scaling Copilot adoption across the organization."
+        ],
+        "challenges": [
+            "Gaining accurate, actionable insights from existing DevOps processes and development cycles. Solution: Facilitated collaborative value stream mapping sessions and conducted targeted metric analysis.",
+            "Delivering effective Copilot training relevant to each team's real-world workflows and challenges. Solution: Tailored training materials and live examples to match team-specific codebases, frameworks, and productivity pain points.",
+            "Measuring and sustaining productivity improvements post-training. Solution: Implemented a dashboard for ongoing monitoring and feedback, enabling continuous improvement and future training rollouts."
+        ],
+        "takeaways": [
+            "Developed skills in value stream mapping, developer coaching, and workshop facilitation.",
+            "Learned how to translate productivity metrics into actionable training and process improvements.",
+            "Enhanced expertise in GitHub Copilot, prompt engineering, and real-time problem-solving with teams.",
+            "Built confidence as a technical trainer, receiving positive feedback on delivery and content creation.",
+            "Established a foundation for scaling AI-driven productivity tools organization-wide."
+        ],
+        "highlights": [
+            "Value stream mapping for software development lifecycle",
+            "Tailored GitHub Copilot workshops and prompt engineering",
+            "DevOps metrics analysis and dashboard implementation",
+            "Live demos and hands-on training for .NET and React teams",
+            "Positive feedback and foundation for scaling Copilot adoption"
+        ],
+        "tech": [
+            "react",
+            "typescript",
+            "dotnet",
+            "github-copilot",
+            "agents"
         ]
     }
 ]

@@ -4,7 +4,7 @@ import experienceData from 'config/json/experience.json';
 import type { Experience } from './components/ExperienceCard';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import PageLayout from '../../components/layouts/PageLayout';
-import { RESUME_URL } from 'config/constants';
+import { RESUME_URL, WEBSITE_INFO } from 'config/constants';
 
 
 const ExperiencesPage: React.FC = () => {
@@ -12,8 +12,8 @@ const ExperiencesPage: React.FC = () => {
 
     return (
         <PageLayout
-            title="Experience Timeline"
-            description="Explore a curated timeline of my professional and personal projects, highlighting my experience in software development, AI, cloud, and more. Each project card details my role, technologies used, and key achievements."
+            title={WEBSITE_INFO.experiences_page.title}
+            description={WEBSITE_INFO.experiences_page.description}
             actions={
                 <a
                     href={RESUME_URL}

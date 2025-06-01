@@ -1,7 +1,29 @@
-import React from 'react';
-import { TextField, Autocomplete, Chip, Stack, ToggleButton, ToggleButtonGroup, Box } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { TextField, Autocomplete, Stack, ToggleButton, ToggleButtonGroup, Box } from '@mui/material';
 import { useForm, Controller } from 'react-hook-form';
 import type { Project } from 'types/Project';
+import { getIconConfig } from '../../../components/icon_service/iconMap';
+import { getIconElement } from '../../../components/icon_service/iconService';
+
+// Helper component for icon+label
+const SkillIconLabel: React.FC<{ skill: string; style?: React.CSSProperties }> = ({ skill, style }) => {
+    const config = getIconConfig(skill);
+    const [icon, setIcon] = useState<React.ReactElement | null>(null);
+    useEffect(() => {
+        let ignore = false;
+        (async () => {
+            const iconEl = await getIconElement(config, { size: 'small' });
+            if (!ignore) setIcon(iconEl);
+        })();
+        return () => { ignore = true; };
+    }, [config]);
+    return (
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, ...style }}>
+            <span style={{ minWidth: 16, display: 'inline-flex', alignItems: 'center' }}>{icon}</span>
+            <span>{config?.displayLabel || skill}</span>
+        </span>
+    );
+};
 
 
 interface ProjectsFilterProps {
@@ -32,7 +54,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({ allProjects: projects, 
     const [filteredProjects, setFilteredProjects] = React.useState<Project[]>(projects);
     const availableSkills = React.useMemo(() => {
         const skillSet = new Set<string>();
-        filteredProjects.forEach(p => (p.technologies || p.tech || []).forEach(t => skillSet.add(t)));
+        filteredProjects.forEach(p => (p.tech || []).forEach(t => skillSet.add(t)));
         return Array.from(skillSet).sort();
     }, [filteredProjects]);
 
@@ -43,12 +65,13 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({ allProjects: projects, 
     React.useEffect(() => {
         const subscription = watch((values) => {
             const filtered = projects.filter(project => {
-                // Search by title or description
+                // Search by title or description (use short_description/full_description)
                 const matchesSearch =
-                    project.title.toLowerCase().includes((values.search ?? '').toLowerCase()) ||
-                    project.description.toLowerCase().includes((values.search ?? '').toLowerCase());
+                    project.title?.toLowerCase().includes((values.search ?? '').toLowerCase()) ||
+                    project.short_description?.toLowerCase().includes((values.search ?? '').toLowerCase()) ||
+                    project.full_description?.toLowerCase().includes((values.search ?? '').toLowerCase());
                 // Filter by selected skills (all must be present)
-                const techs = project.technologies || project.tech || [];
+                const techs = project.tech || [];
                 const matchesSkills =
                     (values.selectedSkills ?? []).length === 0 ||
                     (values.selectedSkills ?? []).filter((skill): skill is string => typeof skill === 'string').every(skill => techs.includes(skill));
@@ -56,7 +79,8 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({ allProjects: projects, 
                 const matchesType = !values.typeFilter || project.type === values.typeFilter;
                 // Filter by start and end date
                 const projectStart = project.startDate ? new Date(project.startDate) : null;
-                const projectEnd = project.endDate ? new Date(project.endDate) : null;
+                // If endDate is null, treat as ongoing (use a far-future date for comparison)
+                const projectEnd = project.endDate === null ? new Date('2999-12-31') : (project.endDate ? new Date(project.endDate) : null);
                 const filterStart = values.startDateFilter ? new Date(values.startDateFilter) : null;
                 const filterEnd = values.endDateFilter ? new Date(values.endDateFilter) : null;
                 let matchesDate = true;
@@ -119,10 +143,34 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({ allProjects: projects, 
                             value={field.value}
                             onChange={(_e, value) => field.onChange(value)}
                             renderTags={(value: string[], getTagProps) =>
-                                value.map((option, index) => (
-                                    <Chip label={option} {...getTagProps({ index })} key={option} />
-                                ))
+                                value.map((option, index) => {
+                                    const restTagProps = getTagProps({ index });
+                                    return (
+                                        <span
+                                            style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                background: 'var(--mui-palette-grey-900, #222)', // fallback for dark
+                                                color: '#fff',
+                                                border: '1px solid #444',
+                                                borderRadius: 16,
+                                                padding: '2px 8px',
+                                                margin: '2px',
+                                                fontSize: 13,
+                                                fontWeight: 500,
+                                            }}
+                                            {...restTagProps}
+                                        >
+                                            <SkillIconLabel skill={option} />
+                                        </span>
+                                    );
+                                })
                             }
+                            renderOption={(props, option) => (
+                                <li {...props} key={option} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: 8 }}>
+                                    <SkillIconLabel skill={option} />
+                                </li>
+                            )}
                             renderInput={params => (
                                 <TextField
                                     {...params}

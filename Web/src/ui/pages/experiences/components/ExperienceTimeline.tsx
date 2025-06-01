@@ -43,7 +43,6 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ experiences }) 
                 <VerticalTimelineElement
                     key={experience.title + experience.company + idx}
                     className="vertical-timeline-element--work"
-                    date={experience.date}
                     iconStyle={{ background: "#1976d2", color: "#fff", boxShadow: "0 0 0 4px #fff, 0 2px 8px rgba(0,0,0,0.15)" }}
                     icon={null}
                     contentStyle={{
@@ -52,7 +51,6 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ experiences }) 
                         boxShadow: "0 2px 12px rgba(0,0,0,0.07)"
                     }}
                     contentArrowStyle={{ borderRight: "7px solid #1976d2" }}
-                    dateClassName="timeline-date"
                 >
                     <ExperienceCard experience={experience} />
                 </VerticalTimelineElement>
