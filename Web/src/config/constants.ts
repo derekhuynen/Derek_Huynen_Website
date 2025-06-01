@@ -52,11 +52,13 @@ export const RESUME_URL = `/derekhuynen/${RESUME_FILE_NAME}`;
 export const WEBSITE_INFO = {
 	projects_page: {
 		title: 'Projects',
-		description: 'A showcase of my projects.',
+		description:
+			'Explore a curated selection of my software development projects, highlighting a range of technologies, problem-solving approaches, and creative solutions. Each project demonstrates my commitment to quality, innovation, and continuous learning in the field of software engineering.',
 	},
 	experiences_page: {
 		title: 'Experiences',
-		description: 'A timeline of my professional experiences.',
+		description:
+			'Welcome to my professional journey. Here you can download my resume and explore a detailed timeline of my work experience, showcasing the roles I have held, the skills I have developed, and the impact I have made across various organizations. My career reflects a passion for software engineering, a dedication to continuous growth, and a commitment to delivering high-quality solutions in dynamic environments.',
 	},
 	home_page: {
 		hero: {
