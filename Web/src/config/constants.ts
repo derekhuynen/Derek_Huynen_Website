@@ -67,4 +67,9 @@ export const WEBSITE_INFO = {
 			action: 'Contact Me',
 		},
 	},
+	contact_me_page: {
+		title: 'Contact Me',
+		description:
+			'I would love to hear from you! Whether you have a question, a job opportunity, or just want to connect, fill out the form below and I’ll get back to you as soon as possible.',
+	},
 };

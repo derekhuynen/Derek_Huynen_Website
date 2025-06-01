@@ -22,6 +22,7 @@ const ProjectsPage: React.FC = () => {
         <PageLayout
             title={WEBSITE_INFO.projects_page.title}
             description={WEBSITE_INFO.projects_page.description}
+            showDownloadButton={true}
         >
             <ProjectsFilter
                 allProjects={allProjects}

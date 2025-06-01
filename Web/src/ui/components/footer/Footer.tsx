@@ -3,7 +3,8 @@ import { Box, Typography, Button } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import { FOOTER_RIGHTS, GITHUB_URL, USER_EMAIL, USER_LINKEDIN_URL } from 'config/constants';
+import DownloadIcon from '@mui/icons-material/Download';
+import { FOOTER_RIGHTS, GITHUB_URL, RESUME_URL, USER_EMAIL, USER_LINKEDIN_URL } from 'config/constants';
 
 const Footer: React.FC = () => {
     return (
@@ -121,6 +122,23 @@ const Footer: React.FC = () => {
                         }}
                     >
                         LinkedIn
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        size="small"
+                        href={RESUME_URL}
+                        download
+                        startIcon={<DownloadIcon sx={{ width: 20, height: 20, mr: 1 }} />}
+                        sx={{
+                            borderRadius: 2,
+                            px: 2,
+                            py: 0.5,
+                            fontWeight: 600,
+                            minWidth: '120px',
+                            fontSize: { xs: '0.9rem', sm: '1rem' }
+                        }}
+                    >
+                        My Resume
                     </Button>
                 </Box>
                 <Typography variant="caption" color="text.secondary" sx={{ mt: 1, fontSize: '0.85rem' }}>
