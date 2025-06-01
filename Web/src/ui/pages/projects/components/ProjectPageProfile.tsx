@@ -1,9 +1,7 @@
 import React from 'react';
 import { Box, Card, CardContent, Typography, Stack, Divider, IconButton } from '@mui/material';
-import TechChip from 'ui/components/tech/TechChip';
 import type { Project } from 'types/Project';
-import { getIconElement } from 'ui/components/icon_service/iconService';
-import { getIconConfig } from 'ui/components/icon_service/iconMap';
+import TechChip from 'ui/components/tech/TechChip';
 
 interface ProjectPageProfileProps {
     project: Project;
@@ -49,7 +47,6 @@ const ProjectPageProfile: React.FC<ProjectPageProfileProps> = ({ project }) => {
                                         title="GitHub Repository"
                                         size="small"
                                     >
-                                        {getIconElement(getIconConfig('github'), { size: 'small' })}
                                         <span style={{ fontWeight: 600, fontSize: 13 }}>Github</span>
                                     </IconButton>
                                 )}
@@ -77,6 +74,7 @@ const ProjectPageProfile: React.FC<ProjectPageProfileProps> = ({ project }) => {
                                 >
                                     {project.tech.map((tech) => (
                                         <TechChip key={tech} name={tech} />
+                                        // <div>{tech}</div>
                                     ))}
                                 </Stack>
                             </Box>
