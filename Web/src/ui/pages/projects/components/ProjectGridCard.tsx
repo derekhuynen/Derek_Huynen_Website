@@ -31,8 +31,7 @@ const ProjectGridCard: React.FC<Project & { skills?: string[] }> = (props) => {
                 bgcolor: (theme) => theme.palette.mode === 'dark' ? '#181818' : '#fafbfc',
                 borderRadius: 3,
                 // Glow box shadow around the outside
-                boxShadow: (theme) => `0 0 18px 4px ${theme.palette.primary.main}22, 0 2px 8px ${theme.palette.primary.main}10`,
-                border: '1px solid',
+                boxShadow: (theme) => `0 0 18px 4px ${theme.custom.main}22, 0 2px 8px ${theme.custom.main}10`,
                 borderColor: (theme) => theme.palette.divider,
                 p: 3,
                 display: 'flex',
@@ -43,7 +42,7 @@ const ProjectGridCard: React.FC<Project & { skills?: string[] }> = (props) => {
                 cursor: 'pointer',
                 transition: 'box-shadow 0.2s, transform 0.2s',
                 '&:hover': {
-                    boxShadow: (theme) => `0 0 28px 8px ${theme.palette.primary.main}33, 0 4px 16px ${theme.palette.primary.main}18`,
+                    boxShadow: (theme) => `0 0 28px 8px ${theme.custom.main}33, 0 4px 16px ${theme.custom.main}18`,
                     transform: 'translateY(-2px) scale(1.02)',
                 },
             }}

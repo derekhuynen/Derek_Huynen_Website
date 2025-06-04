@@ -46,9 +46,10 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ experiences }) 
                     iconStyle={{ background: "#1976d2", color: "#fff", boxShadow: "0 0 0 4px #fff, 0 2px 8px rgba(0,0,0,0.15)" }}
                     icon={null}
                     contentStyle={{
-                        background: 'transparent',
+                        background: theme === 'dark' ? 'transparent' : 'none',
                         color: "#222",
-                        boxShadow: "0 2px 12px rgba(0,0,0,0.07)"
+                        boxShadow: theme === 'dark' ? "0 2px 12px rgba(0,0,0,0.07)" : 'none',
+                        border: 'none',
                     }}
                     contentArrowStyle={{ borderRight: "7px solid #1976d2" }}
                 >

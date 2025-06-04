@@ -1,5 +1,20 @@
 import { createTheme } from '@mui/material/styles';
 
+// Add this to extend the MUI theme with custom colors
+declare module '@mui/material/styles' {
+	interface Theme {
+		custom: {
+			main: string;
+		};
+	}
+	// allow configuration using `createTheme`
+	interface ThemeOptions {
+		custom?: {
+			main?: string;
+		};
+	}
+}
+
 export const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
@@ -26,5 +41,8 @@ export const darkTheme = createTheme({
 	},
 	typography: {
 		fontFamily: 'Roboto, Arial, sans-serif',
+	},
+	custom: {
+		main: '#1976d2', // Example blue, change as needed
 	},
 });

@@ -37,12 +37,12 @@ const FeaturedProjectCard: React.FC<FeaturedProjectCardProps> = ({
                 height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                boxShadow: 3,
+                boxShadow: (theme) => `0 0 18px 4px ${theme.custom.main}22, 0 2px 8px ${theme.custom.main}10`,
                 transition: 'transform 0.3s, box-shadow 0.3s',
                 borderRadius: 2,
                 '&:hover': {
-                    transform: 'translateY(-5px)',
-                    boxShadow: 6,
+                    boxShadow: (theme) => `0 0 28px 8px ${theme.custom.main}33, 0 4px 16px ${theme.custom.main}18`,
+                    transform: 'translateY(-2px) scale(1.02)',
                 },
             }}
         >

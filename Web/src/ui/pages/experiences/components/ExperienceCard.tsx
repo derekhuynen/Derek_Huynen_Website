@@ -20,7 +20,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
                 width: '100%',
                 bgcolor: (theme) => theme.palette.mode === 'dark' ? '#181818' : '#fafbfc',
                 borderRadius: 3,
-                boxShadow: 3,
+                boxShadow: (theme) => `0 0 18px 4px ${theme.custom.main}22, 0 2px 8px ${theme.custom.main}10`,
                 border: '1px solid',
                 borderColor: (theme) => theme.palette.divider,
                 p: { xs: 2, sm: 3 },

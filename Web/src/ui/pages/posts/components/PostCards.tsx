@@ -67,8 +67,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 minHeight: 180,
                 bgcolor: (theme) => theme.palette.mode === 'dark' ? '#23272f' : '#f3f6fa',
                 borderRadius: 4,
-                boxShadow: (theme) => `0 2px 16px 0 ${theme.palette.primary.main}22, 0 1.5px 6px ${theme.palette.primary.main}10`,
-                border: '1.5px solid',
+                boxShadow: (theme) => `0 0 18px 4px ${theme.custom.main}22, 0 2px 8px ${theme.custom.main}10`,
                 borderColor: (theme) => theme.palette.divider,
                 p: 0,
                 mb: 3,
@@ -77,7 +76,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 overflow: 'hidden',
                 transition: 'box-shadow 0.2s',
                 '&:hover': {
-                    boxShadow: (theme) => `0 4px 32px 0 ${theme.palette.primary.main}33, 0 2px 12px ${theme.palette.primary.main}18`,
+                    boxShadow: (theme) => `0 4px 32px 0 ${theme.custom.main}33, 0 2px 12px ${theme.custom.main}18`,
                 },
             }}
         >

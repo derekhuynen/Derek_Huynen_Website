@@ -1,5 +1,20 @@
 import { createTheme } from '@mui/material/styles';
 
+// Add this to extend the MUI theme with custom colors
+declare module '@mui/material/styles' {
+	interface Theme {
+		custom: {
+			main: string;
+		};
+	}
+	// allow configuration using `createTheme`
+	interface ThemeOptions {
+		custom?: {
+			main?: string;
+		};
+	}
+}
+
 export const lightTheme = createTheme({
 	palette: {
 		mode: 'light',
@@ -23,6 +38,9 @@ export const lightTheme = createTheme({
 		warning: { main: '#F4802B', contrastText: '#FFFFFF' },
 		success: { main: '#388E3C', contrastText: '#FFFFFF' },
 		divider: '#E0E0E0',
+	},
+	custom: {
+		main: '#1976d2', // Example blue, change as needed
 	},
 	typography: {
 		fontFamily: 'Roboto, Arial, sans-serif',
