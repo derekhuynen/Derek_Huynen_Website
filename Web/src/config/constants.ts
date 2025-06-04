@@ -2,6 +2,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import BuildIcon from '@mui/icons-material/Build';
 import FolderIcon from '@mui/icons-material/Folder';
 import EmailIcon from '@mui/icons-material/Email';
+import ArticleIcon from '@mui/icons-material/Article';
 
 export const APPLICATION = {
 	Home: {
@@ -21,6 +22,12 @@ export const APPLICATION = {
 		label: 'Experiences',
 		route: '/experiences',
 		icon: FolderIcon,
+	},
+	Posts: {
+		id: 'posts',
+		label: 'Posts',
+		route: '/posts',
+		icon: ArticleIcon,
 	},
 	Contact: {
 		id: 'contact',
@@ -72,4 +79,14 @@ export const WEBSITE_INFO = {
 		description:
 			'I would love to hear from you! Whether you have a question, a job opportunity, or just want to connect, fill out the form below and I’ll get back to you as soon as possible.',
 	},
+	POSTS_TITLE: 'My Posts',
+	POSTS_DESCRIPTION: `Every other day, I share a new post about AI-generated topics, ideas, and trends. Each post is created using my own AI-powered automation tools, combining Azure OpenAI for content and DALL-E for images.
+
+These posts are designed to inspire, inform, and showcase the possibilities of modern AI. Whether you're interested in the latest advancements, practical applications, or just curious about what AI can create, you'll find something new here regularly.
+
+All content and images are generated and published automatically as part of my ongoing exploration of AI-driven creativity.`,
 };
+
+export const GITHUB_LINK =
+	'https://github.com/derekhuynen/LinkedIn_AI_Auto_Poster';
+export const GITHUB_BUTTON_TEXT = 'Linkedin Auto Poster';

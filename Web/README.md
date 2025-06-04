@@ -130,3 +130,55 @@ export default tseslint.config({
 	},
 });
 ```
+
+---
+
+## 📦 Web README
+
+This folder contains the frontend for Derek Huynen's personal website, built with React, Vite, and TypeScript.
+
+### Features
+
+- Modern, responsive UI with Material UI (MUI)
+- State management with Zustand
+- Data fetching with React Query and Axios
+- Form handling with React Hook Form
+- Routing with React Router DOM
+- JSON-driven content for skills and projects
+
+### Structure
+
+```
+Web/
+├── public/                # Static assets and icons
+├── src/
+│   ├── App.tsx            # Main app component
+│   ├── main.tsx           # Entry point
+│   ├── config/            # App configuration and JSON data
+│   ├── services/          # API and helper services
+│   ├── store/             # Zustand state management
+│   └── ui/                # UI components and pages
+├── package.json           # Project dependencies
+├── tsconfig.json          # TypeScript configuration
+├── vite.config.ts         # Vite configuration
+└── README.md              # This file
+```
+
+### Local Development
+
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+### Environment Variables
+
+- Configure `.env` for API endpoints and other settings as needed.
+
+---
+
+For more details, see the main project README or contact Derek Huynen.

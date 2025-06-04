@@ -6,6 +6,7 @@ import ProjectsFilter from './components/ProjectsFilter';
 import ProjectsGrid from './components/ProjectsGrid';
 import type { Project } from 'types/Project';
 import { WEBSITE_INFO } from 'config/constants';
+import DownloadResume from 'ui/components/resume/DownloadResume';
 
 
 
@@ -22,7 +23,7 @@ const ProjectsPage: React.FC = () => {
         <PageLayout
             title={WEBSITE_INFO.projects_page.title}
             description={WEBSITE_INFO.projects_page.description}
-            showDownloadButton={true}
+            upperRight={<DownloadResume />}
         >
             <ProjectsFilter
                 allProjects={allProjects}

@@ -105,3 +105,50 @@ API/
 ## License
 
 MIT
+
+---
+
+## 📦 API README
+
+This folder contains the backend for Derek Huynen's personal website, implemented using Azure Functions and TypeScript.
+
+### Features
+
+- Contact form endpoint
+- Integration with Cosmos DB and Telegram
+- TypeScript-first development
+
+### Structure
+
+```
+API/
+├── src/
+│   ├── functions/         # Azure Functions (e.g., ContactMe)
+│   ├── services/          # Service integrations (Cosmos, Telegram)
+│   └── types/             # TypeScript types
+├── local.settings.json    # Local development settings
+├── host.json              # Azure Functions host config
+├── package.json           # Dependencies and scripts
+├── tsconfig.json          # TypeScript config
+└── README.md              # This file
+```
+
+### Local Development
+
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the Azure Functions host:
+   ```sh
+   npm run start
+   ```
+3. Update `local.settings.json` for secrets and connection strings.
+
+### Deployment
+
+- See the root README for deployment instructions and Azure setup.
+
+---
+
+For more details, see the main project README or contact Derek Huynen.

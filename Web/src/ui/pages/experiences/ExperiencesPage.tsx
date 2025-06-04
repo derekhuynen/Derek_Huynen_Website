@@ -4,7 +4,8 @@ import experienceData from 'config/json/experience.json';
 import type { Experience } from './components/ExperienceCard';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import PageLayout from '../../components/layouts/PageLayout';
-import { RESUME_URL, WEBSITE_INFO } from 'config/constants';
+import { WEBSITE_INFO } from 'config/constants';
+import DownloadResume from 'ui/components/resume/DownloadResume';
 
 
 const ExperiencesPage: React.FC = () => {
@@ -15,31 +16,9 @@ const ExperiencesPage: React.FC = () => {
             title={WEBSITE_INFO.experiences_page.title}
             description={WEBSITE_INFO.experiences_page.description}
             actions={
-                <a
-                    href={RESUME_URL}
-                    download
-                    style={{ textDecoration: 'none' }}
-                >
-                    <Box
-                        component="span"
-                        sx={{
-                            display: 'inline-block',
-                            px: 3,
-                            py: 1.2,
-                            borderRadius: 2,
-                            bgcolor: 'primary.main',
-                            color: 'primary.contrastText',
-                            fontWeight: 600,
-                            fontSize: '1rem',
-                            boxShadow: 2,
-                            cursor: 'pointer',
-                            transition: 'background 0.2s',
-                            '&:hover': { bgcolor: 'primary.dark' },
-                        }}
-                    >
-                        Download My Resume (PDF)
-                    </Box>
-                </a>
+                <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
+                    <DownloadResume />
+                </Box>
             }
         >
             <Box sx={{ mt: 4 }}>

@@ -44,6 +44,13 @@ const myRoutes: RouteObject[] = [
                 },
             },
             {
+                path: '/posts',
+                lazy: async () => {
+                    const Component = await import('../ui/pages/posts/PostsPage');
+                    return { Component: Component.default };
+                },
+            },
+            {
                 path: '*',
                 element: <NotFoundPage />,
             },
