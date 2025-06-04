@@ -7,7 +7,6 @@ export const usePosts = () => {
 		queryKey: ['posts'],
 		queryFn: async () => {
 			const res = await axiosClient.get('/api/get_all_posts');
-			console.log('Fetched posts:', res.data);
 			return res.data;
 		},
 	});
