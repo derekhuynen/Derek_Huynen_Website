@@ -6,7 +6,7 @@ export const usePosts = () => {
 	return useQuery<Post[]>({
 		queryKey: ['posts'],
 		queryFn: async () => {
-			const res = await axiosClient.get('get_all_posts');
+			const res = await axiosClient.get('/api/get_all_posts');
 			console.log('Fetched posts:', res.data);
 			return res.data;
 		},
