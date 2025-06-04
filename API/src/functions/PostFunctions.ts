@@ -90,10 +90,35 @@ export async function GetAllPosts(
 			return post;
 		});
 
+		// Sanitize posts to only include Post type fields
+		const allowedFields = [
+			'id',
+			'topic',
+			'topicDescription',
+			'research',
+			'content',
+			'linkedInPost',
+			'createdAt',
+			'triggerBy',
+			'imageUrl',
+			'blobStorageUrl',
+			'imageAsset',
+			'imagePrompt',
+		];
+		const sanitizedPosts = postsWithSas.map(post => {
+			const clean: Partial<Post> = {};
+			for (const key of allowedFields) {
+				if (key in post) {
+					(clean as any)[key] = (post as any)[key];
+				}
+			}
+			return clean;
+		});
+
 		return {
 			status: 200,
 			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(postsWithSas),
+			body: JSON.stringify(sanitizedPosts),
 		};
 	} catch (err) {
 		context.log('Error querying posts from Cosmos DB:', err);
