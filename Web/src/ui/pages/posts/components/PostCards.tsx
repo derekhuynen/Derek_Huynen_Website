@@ -80,7 +80,6 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
                     boxShadow: (theme) => `0 4px 32px 0 ${theme.palette.primary.main}33, 0 2px 12px ${theme.palette.primary.main}18`,
                 },
             }}
-            style={{ cursor: 'pointer' }}
         >
             <Box sx={{
                 bgcolor: (theme) => theme.palette.mode === 'dark' ? '#0a66c2' : '#eaf3fb',
